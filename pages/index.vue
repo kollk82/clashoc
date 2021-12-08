@@ -2,9 +2,7 @@
     <div class="container">
         <navbar /><logo />  
         <section class="bg">
-            <video autoplay muted loop>
-                <source :src="'~/assets/img/main.mp4'" preload="metadata" type="video/mp4" />
-            </video>
+            
         </section>
         <section class="home">
             <main class="home--text">

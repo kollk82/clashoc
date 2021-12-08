@@ -183,10 +183,14 @@
     grid-column: 1 / -1;
     grid-row: 2;
     display: block;
-    width: auto;
+    width: 100vw;
     height: 100%;
     margin: 0 auto;
     position: relative;
+    background-image: url('../img/IMG_2209.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     &::before {
         content: '';
         position: absolute;
@@ -201,11 +205,5 @@
             hsl(0deg 0% 0%)
         );
         background-size: cover;
-    }
-    video {
-        display: block;
-        width: 100vw;
-        height: calc(100vh - 11rem);
-        object-fit: cover;
     }
 }
