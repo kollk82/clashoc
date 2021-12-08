@@ -1,0 +1,197 @@
+@charset "UTF-8";
+:root {
+    --animate-duration: .8s;
+    --animate-delay: 0;
+    --animate-repeat: 1;
+}
+.animation {
+    -webkit-animation-delay: var(--animate-delay);
+    animation-delay: var(--animate-delay);
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.22, 0, 0.45, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.22, 0, 0.45, 1);
+}
+
+@-webkit-keyframes slideInDown {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+@keyframes slideInDown {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+}
+
+@-webkit-keyframes slideOutUp {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    to {
+        visibility: hidden;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+@keyframes slideOutUp {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    to {
+        visibility: hidden;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+.slideOutUp {
+    -webkit-animation-name: slideOutUp;
+    animation-name: slideOutUp;
+}
+.fadeIn-x {
+    display: block;
+    -webkit-animation: fadeIn-x 0.5s ease-out forwards;
+    -moz-animation: fadeIn-x 0.5s ease-out forwards;
+    -o-animation: fadeIn-x 0.5s ease-out forwards;
+    animation: fadeIn-x 0.5s ease-out forwards;
+}
+
+@-webkit-keyframes fadeIn-x {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+        transform: rotate(-90deg);
+    }
+}
+@keyframes fadeIn-x {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+        transform: rotate(-90deg);
+    }
+}
+.fadeIn {
+    display: block;
+    -webkit-animation: fadeIn 1s ease-out both;
+    -moz-animation: fadeIn 1s ease-out both;
+    -o-animation: fadeIn 1s ease-out both;
+    animation: fadeIn 1s ease-out both;
+    animation-delay: 2s;
+}
+.fadeIn-2 {
+    display: block;
+    -webkit-animation: fadeIn 1s ease-out both;
+    -moz-animation: fadeIn 1s ease-out both;
+    -o-animation: fadeIn 1s ease-out both;
+    animation: fadeIn 1s ease-out both;
+    animation-delay: 1s;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.shake {
+    animation: shake 4.72s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+    transform-origin: 50% 50%;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+    1.78571% {
+        transform: translate(5px, 0);
+    }
+    3.57143% {
+        transform: translate(0, 0);
+    }
+    5.35714% {
+        transform: translate(5px, 0);
+    }
+    7.14286% {
+        transform: translate(0, 0);
+    }
+    8.92857% {
+        transform: translate(5px, 0);
+    }
+    10.71429% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

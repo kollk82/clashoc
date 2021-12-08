@@ -1,0 +1,37 @@
+@mixin galaxy-fold {
+    @media (max-width: 280px) {
+        @content;
+    }
+}
+@mixin phone-only {
+    @media (min-width: 280px) and (max-width: 599px) {
+        @content;
+    }
+}
+@mixin tablet-portrait-up {
+    @media (min-width: 600px) and (max-width: 899px) {
+        @content;
+    }
+}
+@mixin tablet-landscape-up {
+    @media (min-width: 900px) and (max-width: 1199px) {
+        @content;
+    }
+}
+@mixin medium-up {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin navbar-wide {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+@mixin navbar-wide-list {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+

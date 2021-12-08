@@ -1,0 +1,32 @@
+@use 'var' as *;
+@use 'media' as *;
+a {
+    color: $main-color;
+    font-weight: bold;
+}
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 220%;
+    @include galaxy-fold{
+        font-size: 190%;
+    }
+}
+h2 {
+    font-size: 150%;
+    @include galaxy-fold{
+        font-size: 130%;
+    }
+}
+h3 {
+    font-size: 130%;
+    @include galaxy-fold{
+        font-size: 110%;
+    }
+}
+h4{
+    font-size: 120%;
+}
