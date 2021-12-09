@@ -427,8 +427,8 @@ h4 {
   grid-row: 1;
   display: block;
   height: auto;
-  width: 4rem;
-  margin: 2rem 3rem;
+  width: 5rem;
+  margin: 1rem 2rem;
   z-index: 1;
   background-image: url("../img/clashofcars182.png");
   background-repeat: no-repeat;
