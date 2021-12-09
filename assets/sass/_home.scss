@@ -45,6 +45,9 @@
         * {
             display: block;
         }
+        :last-child{
+            margin-bottom: auto;
+        }
         &-h {
             width: 30rem;
             position: relative;
@@ -148,7 +151,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: auto;
             margin-left: auto;
             margin-right: auto;
             position: relative;

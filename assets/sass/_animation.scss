@@ -116,15 +116,18 @@
     -moz-animation: fadeIn 1s ease-out both;
     -o-animation: fadeIn 1s ease-out both;
     animation: fadeIn 1s ease-out both;
+}
+.animation-delay-1s {
+    animation-delay: 1s;
+}
+.animation-delay-2s {
     animation-delay: 2s;
 }
-.fadeIn-2 {
-    display: block;
-    -webkit-animation: fadeIn 1s ease-out both;
-    -moz-animation: fadeIn 1s ease-out both;
-    -o-animation: fadeIn 1s ease-out both;
-    animation: fadeIn 1s ease-out both;
-    animation-delay: 1s;
+.animation-delay-3s {
+    animation-delay: 3s;
+}
+.animation-delay-4s {
+    animation-delay: 4s;
 }
 @-webkit-keyframes fadeIn {
     0% {

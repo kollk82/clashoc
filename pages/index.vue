@@ -1,22 +1,20 @@
 <template>
     <div class="container">
-        <navbar /><logo />  
-        <section class="bg">
-            
-        </section>
+        <navbar /><logo />
+        <section class="bg"></section>
         <section class="home">
             <main class="home--text">
                 <!-- <h5>Website under construction v1.0</h5> -->
-                <div class="home--text-h fadeIn-2">
+                <div class="home--text-h fadeIn animation-delay-1s">
                     <h2>Welcome to</h2>
                     <h1>clashofcars</h1>
                 </div>
-                <p class="fadeIn">
+                <p class="fadeIn animation-delay-2s">
                     I'm a car enthusiast and passionate photographer.<br /><br />
                     I shoot at car events, shows and if you are interested i can
                     do exclusive photo shoot of your car.
                 </p>
-                <div class="home--text-dm">
+                <div class="home--text-dm fadeIn animation-delay-3s">
                     <a
                         href="https://www.instagram.com/clashofcars182/ "
                         target="_blank"
@@ -24,12 +22,13 @@
                         <span>Dm for enquries</span></a
                     >
                 </div>
-                <NuxtLink class="home--text-btn shake" to="/social"
-                    >Contact</NuxtLink
-                >
+                <div class="fadeIn animation-delay-4s">
+                    <div class="shake">
+                        <NuxtLink class="home--text-btn" to="/social">Contact</NuxtLink>
+                    </div>
+                </div>
             </main>
         </section>
         <foot />
     </div>
 </template>
-
