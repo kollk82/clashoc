@@ -10,6 +10,7 @@
                 <nav>
                     <NuxtLink to="/">Home</NuxtLink>
                     <NuxtLink to="/gear">My Gear</NuxtLink>
+                    <NuxtLink to="/gallery">My work</NuxtLink>
                     <NuxtLink to="/shoots">Packages</NuxtLink>
                     <NuxtLink to="/social">Contact</NuxtLink>
                 </nav>
