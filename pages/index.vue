@@ -24,7 +24,7 @@
                 </div>
                 <div class="fadeIn animation-delay-4s">
                     <div class="shake">
-                        <NuxtLink class="home--text-btn" to="/social">Contact</NuxtLink>
+                        <NuxtLink class="home--text-btn" to="/contact">Contact</NuxtLink>
                     </div>
                 </div>
             </main>
