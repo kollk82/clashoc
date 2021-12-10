@@ -12,7 +12,7 @@
                     <NuxtLink to="/gear">My Gear</NuxtLink>
                     <NuxtLink to="/gallery">My work</NuxtLink>
                     <NuxtLink to="/shoots">Packages</NuxtLink>
-                    <NuxtLink to="/social">Contact</NuxtLink>
+                    <NuxtLink to="/contact">Contact</NuxtLink>
                 </nav>
             </div>
         </transition>
