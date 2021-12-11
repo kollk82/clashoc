@@ -1,47 +1,67 @@
+@use 'var' as *;
+@use 'media' as *;
 .shoots {
     grid-column: 1 / -1;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
     height: auto;
+    z-index: -1;
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-image: radial-gradient(
+            hsl(0deg 0% 0% / 42%),
+            hsl(0deg 0% 0%)
+        );
+        z-index: 1;
+    }
     h1 {
         width: 42rem;
         text-align: center;
         padding: 1.5rem 0;
+        z-index: 2;
     }
     &--h1 {
         width: 100%;
-        height: 25rem;
+        height: 100vh;
         display: flex;
-        position: relative;
         justify-content: center;
         align-items: center;
-        background-image: url('../img/IMG_2203.jpg');
+        background-image: url('../img/camaro.jpg');
         background-repeat: no-repeat;
-        background-position: center 35%;
-        background-size: 130%;
-        z-index: 0;
-        overflow: hidden;
-        &::after {
-            content: '';
-            position: absolute;
-            left: -1rem;
-            width: 110%;
-            height: 50%;
-            background-color: red;
-            opacity: .5;
-            transform: rotate(5deg) skew(10deg);
-            z-index: -1;
-        }
+        background-position: center;
+        background-size: cover;
     }
     &--content {
-        display: block;
-        margin: auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background-image: url('../img/camaro_01.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @include medium-up {
+            flex-direction: row;
+        }
         &-box {
             width: 100%;
             text-align: center;
+            z-index: 2;
+         
             h2 {
                 margin: 1rem 0;
             }
