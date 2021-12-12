@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -239,8 +240,8 @@ body {
   height: 100vh;
   background-color: #1a1a1a;
   color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   overflow-x: hidden;
+  font-family: "Bakbak One", cursive;
 }
 
 .router-link-active {
@@ -449,10 +450,6 @@ h4 {
   width: 100vw;
   overflow-y: hidden;
   position: relative;
-  /* div,
-  footer {
-      border: 1px solid red;
-  } */
 }
 @media (min-width: 1200px) {
   .container {
@@ -513,6 +510,7 @@ h4 {
   width: 30rem;
   position: relative;
   margin: auto auto 3rem auto;
+  letter-spacing: 0.4rem;
   z-index: 0;
 }
 @media (max-width: 280px) {
@@ -609,6 +607,9 @@ h4 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.home--text-dm a {
+  letter-spacing: 0.2rem;
+}
 .home--text-btn {
   display: flex;
   justify-content: center;
@@ -623,6 +624,7 @@ h4 {
   border: none;
   overflow: hidden;
   border-radius: 4rem;
+  letter-spacing: 0.2rem;
 }
 @media (max-width: 280px) {
   .home--text-btn {

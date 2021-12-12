@@ -52,6 +52,7 @@
             width: 30rem;
             position: relative;
             margin: auto auto 3rem auto;
+            letter-spacing: .4rem;
             z-index: 0;
             @include galaxy-fold {
                 width: auto;
@@ -145,6 +146,9 @@
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
             }
+            a{
+                letter-spacing: .2rem;
+            }
         }
 
         &-btn {
@@ -161,6 +165,7 @@
             border: none;
             overflow: hidden;
             border-radius: 4rem;
+            letter-spacing: .2rem;
             @include galaxy-fold {
                 width: 22rem;
             }
