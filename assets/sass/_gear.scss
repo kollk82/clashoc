@@ -53,18 +53,31 @@
         background-position: center;
         background-size: cover;
         overflow: hidden;
+        @include medium-up{
+            flex-direction: row;
+        }
+        
         &-box {
             width: 100%;
             height: auto;
             text-align: center;
             padding: 2rem 0;
             z-index: 3;
+
+            :not(:last-child) {
+                margin-bottom: 0.5rem;
+            }
             p {
                 color: $a-color-active;
-                width: max-content;
+                width: 30rem;
                 font-size: 100%;
                 font-weight: bold;
                 margin: 0 auto;
+                padding: 0 1.5rem;
+                background-color: $main-color;
+                @include phone-only{
+                    width: 50%;
+                }
             }
         }
     }

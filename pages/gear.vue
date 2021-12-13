@@ -9,19 +9,14 @@
             <div class="gear--content">
                 <div class="gear--content-box">
                     <h3 class="fadeIn-2">Camera</h3>
-                    <p class="fadeIn">coming soon</p>
+                    <p class="fadeIn">Canon 6DMarkII</p>
+                    <p class="fadeIn">Canon 750D</p>
+                    <p class="fadeIn">Oneplus 7PRO</p>
                 </div>
                 <div class="gear--content-box">
                     <h3 class="fadeIn-2">Lenses</h3>
-                    <p class="fadeIn">coming soon</p>
-                </div>
-                <div class="gear--content-box">
-                    <h3 class="fadeIn-2">Accesories</h3>
-                    <p class="fadeIn">coming soon</p>
-                </div>
-                <div class="gear--content-box">
-                    <h3 class="fadeIn-2">Photo editing tools</h3>
-                    <p class="fadeIn">coming soon</p>
+                    <p class="fadeIn">Canon 35mm f2</p>
+                    <p class="fadeIn">Canon 85mm f1.8</p>
                 </div>
             </div>
         </div>
