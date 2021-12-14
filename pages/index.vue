@@ -19,7 +19,7 @@
                         href="https://www.instagram.com/clashofcars182/ "
                         target="_blank"
                         ><i class="fab fa-instagram icon-insta"></i>
-                        <span>Dm for enquries</span></a
+                        <span>DM for enquries</span></a
                     >
                 </div>
                 <div class="fadeIn animation-delay-4s">

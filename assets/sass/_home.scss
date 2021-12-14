@@ -66,14 +66,14 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: red;
-                opacity: 0.2;
+                background-color: $a-color-active;
                 transform: rotate(10deg) skew(10deg);
                 z-index: -1;
             }
             h1 {
                 text-align: center;
                 margin: 0;
+                text-shadow: 1px 1px 2px $grey-dark;
             }
             h2 {
                 margin: 0 auto;
@@ -149,6 +149,9 @@
             }
             span {
                 margin-bottom: 0 !important;
+                //letter-spacing: 0.5rem;
+                text-transform: uppercase;
+                font-family: 'Open Sans', sans-serif;
             }
         }
 
@@ -158,6 +161,7 @@
             align-items: center;
             margin-left: auto;
             margin-right: auto;
+            padding-bottom: 0.5rem;
             position: relative;
             width: 28rem;
             height: 5rem;
