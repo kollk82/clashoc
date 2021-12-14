@@ -479,7 +479,6 @@ h4 {
   background: linear-gradient(#000000, #ffffff);
   opacity: 0.1;
   transform: rotate(-30deg);
-  overflow: hidden;
 }
 .home--text {
   display: flex;
@@ -509,7 +508,7 @@ h4 {
 .home--text-h {
   width: 30rem;
   position: relative;
-  margin: auto auto 3rem auto;
+  margin: auto;
   letter-spacing: 0.4rem;
   z-index: 0;
 }

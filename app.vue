@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Head :lang="'en-GB'">
+        <Head>
             <Title>ClashOfCars</Title>
             <Meta
                 name="description"

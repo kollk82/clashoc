@@ -1,4 +1,3 @@
 <template>
-    <section class="logo">
-    </section>
+    <section class="logo"></section>
 </template>
