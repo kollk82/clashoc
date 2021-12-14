@@ -44,7 +44,7 @@
         * {
             display: block;
         }
-        :last-child{
+        :last-child {
             margin-bottom: auto;
         }
         &-h {
@@ -82,9 +82,8 @@
             }
         }
         p {
-            text-align: left;
-            margin-right: auto;
-            margin-left: auto;
+            text-align: center;
+            margin: 2rem auto;
             font-size: 130%;
             word-spacing: 0.2rem;
             letter-spacing: 0.2rem;
@@ -148,8 +147,8 @@
             a {
                 letter-spacing: 0.2rem;
             }
-            span{
-                margin-bottom: 0!important;
+            span {
+                margin-bottom: 0 !important;
             }
         }
 
