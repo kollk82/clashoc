@@ -11,8 +11,8 @@
                 </div>
                 <p class="fadeIn animation-delay-2s">
                     I'm a car enthusiast and passionate photographer.<br /><br />
-                    I shoot at car events, shows and if you are interested i can
-                    do exclusive photo shoot of your car.
+                    I shoot at car events, shows and if you are interested I can
+                    do an exclusive photo shoot of your car.
                 </p>
                 <div class="home--text-dm fadeIn animation-delay-3s">
                     <a
