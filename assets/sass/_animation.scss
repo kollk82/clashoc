@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-    --animate-duration: .8s;
+    --animate-duration: 0.8s;
     --animate-delay: 0;
     --animate-repeat: 1;
 }
@@ -9,8 +9,8 @@
     animation-delay: var(--animate-delay);
     -webkit-animation-duration: var(--animate-duration);
     animation-duration: var(--animate-duration);
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.22, 0, 0.45, 1);
     -webkit-animation-timing-function: cubic-bezier(0.22, 0, 0.45, 1);
 }
@@ -44,7 +44,7 @@
 
 @-webkit-keyframes slideOutUp {
     0% {
-        -webkit-transform: translateZ(0);
+        -webkit-transform: translateZ(100%);
         transform: translateZ(0);
     }
     to {
@@ -197,4 +197,30 @@
     100% {
         transform: translate(0, 0);
     }
+}
+@keyframes slideInDown_p {
+    from {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideOutUp_p {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+}
+.slideInDown_p {
+    animation-name: slideInDown_p;
+}
+.slideOutUp_p {
+    animation-name: slideOutUp_p;
 }

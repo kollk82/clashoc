@@ -134,9 +134,10 @@ nav {
         padding: 1rem 2rem;
         color: $main-color;
         text-align: center;
-        font-size: 150%;
+        font-size: 200%;
         text-transform: uppercase;
         transition: color 0.2s ease-in-out;
+        letter-spacing: .2rem;
         &:hover,
         &:focus {
             color: $a-color-active;

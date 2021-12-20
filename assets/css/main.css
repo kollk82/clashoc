@@ -1,3 +1,7 @@
+/*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
 * {
@@ -9,10 +13,6 @@ a {
   text-decoration: none;
 }
 
-/*!
- * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
 @font-face {
   font-family: "Font Awesome 5 Brands";
   font-style: normal;
@@ -27,7 +27,7 @@ a {
 }
 
 :root {
-  --animate-duration: .8s;
+  --animate-duration: 0.8s;
   --animate-delay: 0;
   --animate-repeat: 1;
 }
@@ -37,8 +37,8 @@ a {
   animation-delay: var(--animate-delay);
   -webkit-animation-duration: var(--animate-duration);
   animation-duration: var(--animate-duration);
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.22, 0, 0.45, 1);
   -webkit-animation-timing-function: cubic-bezier(0.22, 0, 0.45, 1);
 }
@@ -72,7 +72,7 @@ a {
 
 @-webkit-keyframes slideOutUp {
   0% {
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translateZ(100%);
     transform: translateZ(0);
   }
   to {
@@ -224,6 +224,34 @@ a {
     transform: translate(0, 0);
   }
 }
+@keyframes slideInDown_p {
+  from {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideOutUp_p {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+}
+.slideInDown_p {
+  animation-name: slideInDown_p;
+}
+
+.slideOutUp_p {
+  animation-name: slideOutUp_p;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -380,9 +408,10 @@ nav a {
   padding: 1rem 2rem;
   color: #f0f0f0;
   text-align: center;
-  font-size: 150%;
+  font-size: 200%;
   text-transform: uppercase;
   transition: color 0.2s ease-in-out;
+  letter-spacing: 0.2rem;
 }
 nav a:hover, nav a:focus {
   color: #6d1d1d;
@@ -395,7 +424,8 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   text-transform: uppercase;
 }
 
@@ -428,6 +458,10 @@ h3 {
 
 h4 {
   font-size: 120%;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
 .logo {
@@ -520,6 +554,7 @@ h4 {
 @media (min-width: 1200px) {
   .home--text-h {
     width: auto;
+    margin-top: 15rem;
   }
 }
 .home--text-h::after {
@@ -720,7 +755,7 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../img/cupra_01.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -733,28 +768,52 @@ h4 {
   }
 }
 .gear--content-box {
+  display: block;
   width: 100%;
   height: auto;
-  text-align: center;
-  padding: 2rem 0;
+  margin: 0 0 6rem 0;
   z-index: 3;
 }
-.gear--content-box :not(:last-child) {
+.gear--content-box :not(:last-child, :first-child) {
   margin-bottom: 0.5rem;
 }
+.gear--content-box h2,
+.gear--content-box h4,
 .gear--content-box p {
-  color: #6d1d1d;
   width: 30rem;
-  font-size: 100%;
-  font-weight: bold;
+  height: max-content;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+  color: #262626;
   background-color: #f0f0f0;
 }
 @media (min-width: 280px) and (max-width: 599px) {
-  .gear--content-box p {
-    width: 50%;
+  .gear--content-box h2,
+.gear--content-box h4,
+.gear--content-box p {
+    width: 70%;
   }
+}
+.gear--content-box p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.gear--content-box h2 {
+  margin-bottom: 3rem;
+}
+.gear--content-box h4 {
+  display: block;
+  margin: 0.5rem auto;
+  color: #6d1d1d;
+  cursor: pointer;
+}
+.gear--content-box h4 span {
+  width: max-content;
+  height: max-content;
+  color: #262626;
+  float: right;
 }
 
 .gall {

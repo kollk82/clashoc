@@ -1,6 +1,9 @@
 <template>
     <div class="navigation">
-        <div v-bind:class="{'active nav-icon': !show, 'nav-icon-x': show}" @click="show = !show"></div>
+        <div
+            v-bind:class="{ 'active nav-icon': !show, 'nav-icon-x': show }"
+            @click="show = !show"
+        ></div>
         <transition
             name="custom-classes-transition"
             enter-active-class="animation slideInDown"

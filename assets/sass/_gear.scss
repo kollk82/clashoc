@@ -47,36 +47,57 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
+        min-height: 100vh;
         background-image: url('../img/cupra_01.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         overflow: hidden;
-        @include medium-up{
+        @include medium-up {
             flex-direction: row;
         }
-        
+
         &-box {
+            display: block;
             width: 100%;
             height: auto;
-            text-align: center;
-            padding: 2rem 0;
+            margin: 0 0 6rem 0;
             z-index: 3;
-
-            :not(:last-child) {
+            :not(:last-child, :first-child) {
                 margin-bottom: 0.5rem;
             }
+            h2,
+            h4,
             p {
-                color: $a-color-active;
                 width: 30rem;
-                font-size: 100%;
-                font-weight: bold;
+                height: max-content;
                 margin: 0 auto;
-                padding: 0 1.5rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                font-weight: bold;
+                color: $grey-dark;
                 background-color: $main-color;
-                @include phone-only{
-                    width: 50%;
+                @include phone-only {
+                    width: 70%;
+                }
+            }
+            p {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            h2 {
+                margin-bottom: 3rem;
+            }
+            h4 {
+                display: block;
+                margin: 0.5rem auto;
+                color: $a-color-active;
+                cursor: pointer;
+                span {
+                    width: max-content;
+                    height: max-content;
+                    color: $grey-dark;
+                    float: right;
                 }
             }
         }

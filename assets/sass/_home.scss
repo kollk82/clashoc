@@ -57,6 +57,7 @@
             }
             @include medium-up {
                 width: auto;
+                margin-top: 15rem;  
             }
             &::after {
                 content: '';
@@ -148,7 +149,6 @@
             }
             span {
                 margin-bottom: 0 !important;
-                //letter-spacing: 0.5rem;
                 text-transform: uppercase;
                 font-family: 'Open Sans', sans-serif;
             }
