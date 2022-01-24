@@ -21,18 +21,14 @@
                         >
                         <span v-else-if="show_1" class="span_minus">-</span>
                     </h4>
-                    <transition
-                        name="custom-classes-transition"
-                        enter-active-class="animation slideInDown_p"
-                        leave-active-class="animation slideOutUp_p"
-                        ><div v-if="show_1">
-                            <p>
-                                Main camera I use it for all shoots. Great
-                                performance in low light. Camera has an
-                                excellent touch screen and long battery life.
-                            </p>
-                        </div>
-                    </transition>
+                    <div v-if="show_1">
+                        <p>
+                            Main camera I use it for all shoots. Great
+                            performance in low light. Camera has an excellent
+                            touch screen and long battery life.
+                        </p>
+                    </div>
+
                     <h4
                         v-bind:class="{
                             'active span_minus': !show_2,
@@ -45,16 +41,12 @@
                         >
                         <span v-else-if="show_2" class="span_minus">-</span>
                     </h4>
-                    <transition
-                        name="custom-classes-transition"
-                        enter-active-class="animation slideInDown_p"
-                        leave-active-class="animation slideOutUp_p"
-                    >
-                        <p v-if="show_2">
-                            Secondary camera love it for lightweight and fast
-                            continious shooting.
-                        </p>
-                    </transition>
+
+                    <p v-if="show_2">
+                        Secondary camera love it for lightweight and fast
+                        continious shooting.
+                    </p>
+
                     <h4
                         v-bind:class="{
                             'active span_minus': !show_3,
@@ -67,17 +59,13 @@
                         >
                         <span v-else-if="show_3" class="span_minus">-</span>
                     </h4>
-                    <transition
-                        name="custom-classes-transition"
-                        enter-active-class="animation slideInDown_p"
-                        leave-active-class="animation slideOutUp_p"
-                    >
-                        <p v-if="show_3">
-                            Great for recording short video clips. I'm using it
-                            for Instagram reels. This phone can record videos in
-                            solid 1080p 60fps.
-                        </p>
-                    </transition>
+
+                    <p v-if="show_3">
+                        Great for recording short video clips. I'm using it for
+                        Instagram reels. This phone can record videos in solid
+                        1080p 60fps.
+                    </p>
+
                     <h4
                         v-bind:class="{
                             'active span_minus': !show_4,
@@ -90,21 +78,16 @@
                         >
                         <span v-else-if="show_4" class="span_minus">-</span>
                     </h4>
-                    <transition
-                        name="custom-classes-transition"
-                        enter-active-class="animation slideInDown_p"
-                        leave-active-class="animation slideOutUp_p"
-                    >
-                        <p v-if="show_4">
-                            This Action Camera is perfect for POV You Tube
-                            videos. Link to my You Tube videos...&nbsp;<a
-                                class="plane_link"
-                                href="https://www.youtube.com/channel/UCRz3qSzQEpXApP8uAkYVGRw"
-                                target="_blank"
-                                >here</a
-                            >
-                        </p>
-                    </transition>
+
+                    <p v-if="show_4">
+                        This Action Camera is perfect for POV You Tube videos.
+                        Link to my You Tube videos...&nbsp;<a
+                            class="plane_link"
+                            href="https://www.youtube.com/channel/UCRz3qSzQEpXApP8uAkYVGRw"
+                            target="_blank"
+                            >here</a
+                        >
+                    </p>
                 </div>
                 <div class="gear--content-box">
                     <h2>Lenses</h2>
@@ -120,17 +103,12 @@
                         >
                         <span v-else-if="show_5" class="span_minus">-</span>
                     </h4>
-                    <transition
-                        name="custom-classes-transition"
-                        enter-active-class="animation slideInDown_p"
-                        leave-active-class="animation slideOutUp_p"
-                    >
-                        <p v-if="show_5">
-                            Main lens I use it for all my shoots. Very bright
-                            lens taking sharp images even with aparature wide
-                            open at f2.
-                        </p>
-                    </transition>
+
+                    <p v-if="show_5">
+                        Main lens I use it for all my shoots. Very bright lens
+                        taking sharp images even with aparature wide open at f2.
+                    </p>
+
                     <h4
                         v-bind:class="{
                             'active span_minus': !show_6,
@@ -143,15 +121,10 @@
                         >
                         <span v-else-if="show_6" class="span_minus">-</span>
                     </h4>
-                    <transition
-                        name="custom-classes-transition"
-                        enter-active-class="animation slideInDown_p"
-                        leave-active-class="animation slideOutUp_p"
-                    >
-                        <p v-if="show_6">
-                            Great low light performer with very nice bokeh.
-                        </p>
-                    </transition>
+
+                    <p v-if="show_6">
+                        Great low light performer with very nice bokeh.
+                    </p>
                 </div>
             </div>
         </div>
