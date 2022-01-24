@@ -793,11 +793,6 @@ p {
   background-size: cover;
   overflow: hidden;
 }
-@media (min-width: 1200px) {
-  .gear--content {
-    flex-direction: row;
-  }
-}
 .gear--content-box {
   display: block;
   width: 100%;

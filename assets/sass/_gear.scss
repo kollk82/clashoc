@@ -54,9 +54,6 @@
         background-position: center;
         background-size: cover;
         overflow: hidden;
-        @include medium-up {
-            flex-direction: row;
-        }
 
         &-box {
             display: block;
