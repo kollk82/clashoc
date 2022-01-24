@@ -4,7 +4,9 @@
         <logo />
         <div class="social">
             <div class="social--h1">
-                <h1>Contact</h1>
+                <h1>Contact
+                    <arrow />
+                </h1>
             </div>
             <div class="social--box">
                 <h2 class="fadeIn-2">Email</h2>

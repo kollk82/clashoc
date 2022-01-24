@@ -4,7 +4,7 @@
         <logo />
         <div class="gear">
             <div class="gear--h1">
-                <h1>My gear</h1>
+                <h1>My gear <arrow /></h1>
             </div>
             <div class="gear--content">
                 <div class="gear--content-box">
@@ -27,8 +27,9 @@
                         leave-active-class="animation slideOutUp_p"
                         ><div v-if="show_1">
                             <p>
-                                Main camera I use it for all shoots. Great performance in low light. Camera has an excellent 
-                                touch screen and long battery life.
+                                Main camera I use it for all shoots. Great
+                                performance in low light. Camera has an
+                                excellent touch screen and long battery life.
                             </p>
                         </div>
                     </transition>
@@ -50,7 +51,8 @@
                         leave-active-class="animation slideOutUp_p"
                     >
                         <p v-if="show_2">
-                            Secondary camera love it for lightweight and fast continious shooting.
+                            Secondary camera love it for lightweight and fast
+                            continious shooting.
                         </p>
                     </transition>
                     <h4
@@ -71,13 +73,11 @@
                         leave-active-class="animation slideOutUp_p"
                     >
                         <p v-if="show_3">
-                            Great for recording short video clips. I use it for Instagram Reels.
-                            Records videos up to 4k 30ps.
+                            Great for recording short video clips. I'm using it
+                            for Instagram reels. This phone can record videos in
+                            solid 1080p 60fps.
                         </p>
                     </transition>
-                </div>
-                <div class="gear--content-box">
-                    <h2>Lenses</h2>
                     <h4
                         v-bind:class="{
                             'active span_minus': !show_4,
@@ -85,7 +85,7 @@
                         }"
                         @click="show_4 = !show_4"
                     >
-                        Canon 35mm f2<span v-if="!show_4" class="span_plus"
+                        Dji Osmo Action<span v-if="!show_4" class="span_plus"
                             >+</span
                         >
                         <span v-else-if="show_4" class="span_minus">-</span>
@@ -96,10 +96,18 @@
                         leave-active-class="animation slideOutUp_p"
                     >
                         <p v-if="show_4">
-                            Main lens I use it for all my shoots. Very bright lens taking sharp images
-                            even with aparature wide open at f2.
+                            This Action Camera is perfect for POV You Tube
+                            videos. Link to my You Tube videos...&nbsp;<a
+                                class="plane_link"
+                                href="https://www.youtube.com/channel/UCRz3qSzQEpXApP8uAkYVGRw"
+                                target="_blank"
+                                >here</a
+                            >
                         </p>
                     </transition>
+                </div>
+                <div class="gear--content-box">
+                    <h2>Lenses</h2>
                     <h4
                         v-bind:class="{
                             'active span_minus': !show_5,
@@ -107,7 +115,7 @@
                         }"
                         @click="show_5 = !show_5"
                     >
-                        Canon 85mm f1.8<span v-if="!show_5" class="span_plus"
+                        Canon 35mm f2<span v-if="!show_5" class="span_plus"
                             >+</span
                         >
                         <span v-else-if="show_5" class="span_minus">-</span>
@@ -118,6 +126,29 @@
                         leave-active-class="animation slideOutUp_p"
                     >
                         <p v-if="show_5">
+                            Main lens I use it for all my shoots. Very bright
+                            lens taking sharp images even with aparature wide
+                            open at f2.
+                        </p>
+                    </transition>
+                    <h4
+                        v-bind:class="{
+                            'active span_minus': !show_6,
+                            span_minus: show_6,
+                        }"
+                        @click="show_6 = !show_6"
+                    >
+                        Canon 85mm f1.8<span v-if="!show_6" class="span_plus"
+                            >+</span
+                        >
+                        <span v-else-if="show_6" class="span_minus">-</span>
+                    </h4>
+                    <transition
+                        name="custom-classes-transition"
+                        enter-active-class="animation slideInDown_p"
+                        leave-active-class="animation slideOutUp_p"
+                    >
+                        <p v-if="show_6">
                             Great low light performer with very nice bokeh.
                         </p>
                     </transition>
@@ -136,6 +167,7 @@ export default {
             show_3: false,
             show_4: false,
             show_5: false,
+            show_6: false,
         };
     },
     mounted() {
@@ -144,6 +176,7 @@ export default {
         this.show_3 = false; // might need this.$nextTick
         this.show_4 = false;
         this.show_5 = false;
+        this.show_6 = false;
     },
 };
 </script>

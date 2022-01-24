@@ -252,6 +252,32 @@ a {
   animation-name: slideOutUp_p;
 }
 
+.arrow {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.arrow {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.arrow span {
+  font-size: 5rem;
+  text-align: center;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -462,6 +488,10 @@ h4 {
 
 p {
   font-family: "Open Sans", sans-serif;
+}
+
+.plane_link {
+  color: #6d1d1d;
 }
 
 .logo {
@@ -718,6 +748,7 @@ p {
   width: 100%;
   height: auto;
   position: relative;
+  font-size: 150%;
 }
 .gear::before {
   content: "";
@@ -773,6 +804,7 @@ p {
   height: auto;
   margin: 0 0 6rem 0;
   z-index: 3;
+  overflow: hidden;
 }
 .gear--content-box :not(:last-child, :first-child) {
   margin-bottom: 0.5rem;
@@ -780,21 +812,26 @@ p {
 .gear--content-box h2,
 .gear--content-box h4,
 .gear--content-box p {
-  width: 30rem;
-  height: max-content;
+  width: max-content;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: bold;
   color: #262626;
   background-color: #f0f0f0;
+  overflow: hidden;
+  text-align: center;
 }
 @media (min-width: 280px) and (max-width: 599px) {
   .gear--content-box h2,
 .gear--content-box h4,
 .gear--content-box p {
-    width: 70%;
+    width: 90%;
   }
+}
+.gear--content-box h2,
+.gear--content-box h4 {
+  height: max-content;
 }
 .gear--content-box p {
   padding-top: 1rem;
