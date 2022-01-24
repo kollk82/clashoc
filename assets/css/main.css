@@ -829,6 +829,27 @@ p {
     width: 90%;
   }
 }
+@media (min-width: 600px) and (max-width: 899px) {
+  .gear--content-box h2,
+.gear--content-box h4,
+.gear--content-box p {
+    width: 50%;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .gear--content-box h2,
+.gear--content-box h4,
+.gear--content-box p {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .gear--content-box h2,
+.gear--content-box h4,
+.gear--content-box p {
+    width: 70%;
+  }
+}
 .gear--content-box h2,
 .gear--content-box h4 {
   height: max-content;
