@@ -9,7 +9,7 @@
             </div>
             <div class="gall--images">
                 <figure v-for="(image, i) in images" :key="i">
-                    <img :src="`/gallery/${image}.jpg`" />
+                    <img :src="`/assets/gallery/${image}.jpg`" />
                 </figure>
             </div>
         </section>
