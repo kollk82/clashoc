@@ -21,7 +21,7 @@
 export default {
     data() {
         return {
-            images: ['1', '3', '4', '5', '7'],
+            images: ['1', '2', '3', '4', '5'],
         };
     },
 };
