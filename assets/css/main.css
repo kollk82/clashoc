@@ -901,7 +901,6 @@ p {
 }
 .gall--h h1,
 .gall--h h3 {
-  width: 42rem;
   text-align: center;
   z-index: 3;
 }
@@ -912,15 +911,45 @@ p {
   width: 100vw;
   height: auto;
 }
-.gall--images figure {
+.gall--images h2 {
+  width: 100%;
+  height: max-content;
+  margin: 1rem auto;
+  padding: 4rem;
+  color: #6d1d1d;
+  cursor: pointer;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.gall--images div {
+  width: 100%;
+  position: relative;
+}
+.gall--images div figure {
+  display: block;
   width: 100vw;
   margin: 0;
   padding: 0;
   line-height: 0;
 }
-.gall--images figure img {
+.gall--images div figure img {
   width: 100%;
   object-fit: cover;
+}
+.gall--images div a {
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 3rem;
+  right: 3rem;
+}
+.gall--images div a span {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  font-size: 200%;
+  color: #6d1d1d;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .shoots {

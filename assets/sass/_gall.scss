@@ -33,7 +33,6 @@
         }
         h1,
         h3 {
-            width: 42rem;
             text-align: center;
             z-index: 3;
         }
@@ -44,14 +43,47 @@
     &--images {
         width: 100vw;
         height: auto;
-        figure {
-            width: 100vw;
-            margin: 0;
-            padding: 0;
-            line-height: 0;
-            img {
-                width: 100%;
-                object-fit: cover;
+
+        h2 {
+            width: 100%;
+            height: max-content;
+            margin: 1rem auto;
+            padding: 4rem;
+            color: $a-color-active;
+            cursor: pointer;
+            text-align: center;
+            background-color: $main-color;
+        }
+        div {
+            width: 100%;
+            position: relative;
+            figure {
+                display: block;
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+                line-height: 0;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            a {
+                position: absolute;
+                transform: rotate(90deg);
+                bottom: 3rem;
+                right: 3rem;
+                span {
+                    display: block;
+                    width: 2rem;
+                    height: 2rem;
+                    cursor: pointer;
+                    font-size: 200%;
+                    color: $a-color-active;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                        sans-serif;
+                }
             }
         }
     }
