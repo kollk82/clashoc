@@ -1,5 +1,6 @@
 <template>
     <div class="navigation">
+        <section class="logo"></section>
         <div
             v-bind:class="{ 'active nav-icon': !show, 'nav-icon-x': show }"
             @click="show = !show"
@@ -9,7 +10,7 @@
             enter-active-class="animation slideInDown"
             leave-active-class="animation slideOutUp"
         >
-            <div class="nav" v-if="show">
+            <div class="nav" v-show="show">
                 <nav>
                     <NuxtLink to="/">Home</NuxtLink>
                     <NuxtLink to="/gear">My Gear</NuxtLink>

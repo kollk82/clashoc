@@ -299,6 +299,17 @@ body {
   font-family: "Bakbak One", cursive;
 }
 
+.logo {
+  display: block;
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem 2rem;
+  background-image: url("../img/clashofcars182.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+
 .router-link-active {
   display: block;
   position: relative;
@@ -333,15 +344,16 @@ body {
 }
 
 .navigation {
-  grid-row: 1;
-  grid-column: 1/-1;
+  position: fixed;
   height: 7rem;
-  position: relative;
+  width: 100vw;
+  z-index: 9999;
+  background-color: #1a1a1a;
 }
 
 .nav {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   justify-content: center;
@@ -354,6 +366,16 @@ body {
   background-size: cover;
   z-index: 99;
 }
+@media (min-width: 1200px) {
+  .nav {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: none;
+    margin-right: 5%;
+    height: max-content;
+  }
+}
 .nav::before {
   content: "";
   position: absolute;
@@ -365,6 +387,11 @@ body {
   height: 100%;
   background-image: radial-gradient(rgba(0, 0, 0, 0.42), black);
   background-size: cover;
+}
+@media (min-width: 1200px) {
+  .nav::before {
+    display: none;
+  }
 }
 @media (min-width: 600px) {
   .nav {
@@ -383,6 +410,11 @@ body {
   cursor: pointer;
   z-index: 999;
 }
+@media (min-width: 1200px) {
+  .nav-icon {
+    display: none;
+  }
+}
 .nav-icon-x {
   display: block;
   position: absolute;
@@ -398,6 +430,11 @@ body {
   -moz-animation: fadeIn-x 0.5s ease forwards;
   -o-animation: fadeIn-x 0.5s ease forwards;
   animation: fadeIn-x 0.5s ease forwards;
+}
+@media (min-width: 1200px) {
+  .nav-icon-x {
+    display: none;
+  }
 }
 .nav-icon-x::before {
   content: "";
@@ -428,6 +465,11 @@ nav {
   height: auto;
   z-index: 101;
 }
+@media (min-width: 1200px) {
+  nav {
+    flex-direction: row;
+  }
+}
 nav a {
   display: block;
   margin: 1rem 0;
@@ -441,6 +483,11 @@ nav a {
 }
 nav a:hover, nav a:focus {
   color: #6d1d1d;
+}
+@media (min-width: 1200px) {
+  nav a {
+    font-size: 80%;
+  }
 }
 
 a {
@@ -481,6 +528,11 @@ h3 {
     font-size: 110%;
   }
 }
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 90%;
+  }
+}
 
 h4 {
   font-size: 120%;
@@ -494,23 +546,10 @@ p {
   color: #6d1d1d;
 }
 
-.logo {
-  grid-column: 1/-1;
-  grid-row: 1;
-  display: block;
-  height: auto;
-  width: 5rem;
-  margin: 1rem 2rem;
-  z-index: 1;
-  background-image: url("../img/clashofcars182.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .container {
   display: grid;
   grid-template-columns: repeat(5, 20vw);
-  grid-template-rows: max-content auto max-content;
+  grid-template-rows: 7rem auto 7rem;
   min-height: 100vh;
   width: 100vw;
   overflow-y: hidden;
@@ -742,6 +781,7 @@ p {
 
 .gear {
   grid-column: 1/-1;
+  grid-row: 2;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -842,7 +882,7 @@ p {
   .gear--content-box h2,
 .gear--content-box h4,
 .gear--content-box p {
-    width: 70%;
+    width: 40%;
   }
 }
 .gear--content-box h2,
@@ -862,11 +902,22 @@ p {
   color: #6d1d1d;
   cursor: pointer;
 }
-.gear--content-box h4 span {
-  width: max-content;
-  height: max-content;
-  color: #262626;
+.gear--content-box h4 .span_plus,
+.gear--content-box h4 .span_minus {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 1rem;
+  color: #f0f0f0;
+  border-radius: 50% 50%;
+  background-color: #6d1d1d;
   float: right;
+}
+.gear--content-box h4 .span_plus {
+  line-height: 4rem;
+}
+.gear--content-box h4 .span_minus {
+  line-height: 3.3rem;
 }
 
 .gall {
@@ -911,49 +962,65 @@ p {
   width: 100vw;
   height: auto;
 }
-.gall--images h2 {
-  width: 100%;
-  height: max-content;
-  margin: 1rem auto;
-  padding: 4rem;
+.gall--images-wrapper {
+  height: 18rem;
+  width: 35rem;
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem 0 1rem 1rem;
   color: #6d1d1d;
   cursor: pointer;
-  text-align: center;
+  text-align: left;
   background-color: #f0f0f0;
+  border-radius: 1rem 0 0 7rem;
+  box-shadow: 0px -10px 20px #000;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+.gall--images-wrapper img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .gall--images div {
-  width: 100%;
+  display: block;
   position: relative;
 }
 .gall--images div figure {
   display: block;
-  width: 100vw;
-  margin: 0;
+  width: 27rem;
+  margin: 0 auto;
   padding: 0;
   line-height: 0;
 }
 .gall--images div figure img {
-  width: 100%;
-  object-fit: cover;
+  width: 27rem;
+  margin-left: 4rem;
 }
 .gall--images div a {
+  display: block;
   position: absolute;
-  transform: rotate(90deg);
   bottom: 3rem;
   right: 3rem;
 }
 .gall--images div a span {
   display: block;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50% 50%;
   cursor: pointer;
-  font-size: 200%;
+  font-size: 100%;
+  background-color: #f0f0f0;
+  line-height: 2.7rem;
   color: #6d1d1d;
+  padding-left: 0.4rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .shoots {
   grid-column: 1/-1;
+  grid-row: 2;
   display: flex;
   position: relative;
   align-items: center;
@@ -1023,6 +1090,7 @@ p {
 
 .social {
   grid-column: 1/-1;
+  grid-row: 2;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -1123,7 +1191,6 @@ p {
   grid-row: 3;
   display: flex;
   width: 100%;
-  height: 4rem;
   color: #f0f0f0;
   justify-content: center;
   align-items: flex-end;

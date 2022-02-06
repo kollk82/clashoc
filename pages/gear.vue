@@ -1,7 +1,6 @@
 <template>
     <div class="container">
         <navbar />
-        <logo />
         <div class="gear">
             <div class="gear--h1">
                 <h1>My gear <arrow /></h1>

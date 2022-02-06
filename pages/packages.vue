@@ -1,7 +1,6 @@
 <template>
     <div class="container">
         <navbar />
-        <logo />
         <div class="shoots">
             <div class="shoots--h1">
                 <h1>Photo shoot packages</h1>

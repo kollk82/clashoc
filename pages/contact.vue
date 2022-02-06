@@ -1,7 +1,6 @@
 <template>
     <div class="container">
         <navbar />
-        <logo />
         <div class="social">
             <div class="social--h1">
                 <h1>Contact

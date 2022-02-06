@@ -1,14 +1,19 @@
 <template>
     <main class="container">
         <navbar />
-        <logo />
         <section class="gall">
             <div class="gall--h">
                 <h1>My work</h1>
                 <arrow />
             </div>
             <div class="gall--images">
-                <h2 @click="showGt86 = !showGt86">Toyota GT86</h2>
+                <div class="gall--images-wrapper" @click="showGt86 = !showGt86">
+                    <h3>Toyota GT86</h3>
+                    <img
+                        :src="`/gallery/gt86/7.jpg`"
+                        :alt="`Toyota GT86 image number 7`"
+                    />
+                </div>
                 <div v-if="showGt86">
                     <figure v-for="(image, i) in images_gt86" :key="i">
                         <img
@@ -16,11 +21,15 @@
                             :alt="`Toyota GT86 image number ${image}`"
                         />
                     </figure>
-                    <a @click="showGt86 = !showGt86"><span>&#60;</span></a>
+                    <a @click="showGt86 = !showGt86"><span>up</span></a>
                 </div>
-                <h2 @click="showSls = !showSls">
-                    Mercedes-Benz SLS Amg Roadster
-                </h2>
+                <div class="gall--images-wrapper" @click="showSls = !showSls">
+                    <h3>Amg Sls</h3>
+                    <img
+                        :src="`/gallery/sls/8.jpg`"
+                        :alt="`Mercedes SLS image number 8`"
+                    />
+                </div>
                 <div v-if="showSls">
                     <figure v-for="(image, i) in images_sls" :key="i">
                         <img
@@ -28,9 +37,15 @@
                             :alt="`Mercedes SLS image number ${image}`"
                         />
                     </figure>
-                    <a @click="showSls = !showSls"><span>&#60;</span></a>
+                    <a @click="showSls = !showSls"><span>up</span></a>
                 </div>
-                <h2 @click="showVz = !showVz">Cupra Formentor VZ</h2>
+                <div class="gall--images-wrapper" @click="showVz = !showVz">
+                    <h3>Cupra Formentor VZ</h3>
+                    <img
+                        :src="`/gallery/cupra/formentor/7.jpg`"
+                        :alt="`Cupra Formentor VZ image number 7`"
+                    />
+                </div>
                 <div v-if="showVz">
                     <figure v-for="(image, i) in images_vz" :key="i">
                         <img
@@ -38,9 +53,15 @@
                             :alt="`Cupra Formentor VZ image number ${image}`"
                         />
                     </figure>
-                    <a @click="showVz = !showVz"><span>&#60;</span></a>
+                    <a @click="showVz = !showVz"><span>up</span></a>
                 </div>
-                <h2 @click="showLeon = !showLeon">Seat Leon Cupra</h2>
+                <div class="gall--images-wrapper" @click="showLeon = !showLeon">
+                    <h3>Seat Leon Cupra</h3>
+                    <img
+                        :src="`/gallery/cupra/leon/8.jpg`"
+                        :alt="`Seat Leon Cupra image number 8`"
+                    />
+                </div>
                 <div v-if="showLeon">
                     <figure v-for="(image, i) in images_leonCupra" :key="i">
                         <img
@@ -48,7 +69,7 @@
                             :alt="`Seat Leon Cupra image number ${image}`"
                         />
                     </figure>
-                    <a @click="showLeon = !showLeon"><span>&#60;</span></a>
+                    <a @click="showLeon = !showLeon"><span>up</span></a>
                 </div>
             </div>
         </section>

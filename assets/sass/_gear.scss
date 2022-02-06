@@ -2,6 +2,7 @@
 @use 'media' as *;
 .gear {
     grid-column: 1 / -1;
+    grid-row: 2;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -87,7 +88,7 @@
                     width: 30%;
                 }
                 @include medium-up {
-                    width:70%;
+                    width: 40%;
                 }
             }
             h2,
@@ -106,11 +107,22 @@
                 margin: 0.5rem auto;
                 color: $a-color-active;
                 cursor: pointer;
-                span {
-                    width: max-content;
-                    height: max-content;
-                    color: $grey-dark;
+                .span_plus,
+                .span_minus {
+                    display: block;
+                    width: 4rem;
+                    height: 4rem;
+                    margin-top: 1rem;
+                    color: $main-color;
+                    border-radius: 50% 50%;
+                    background-color: $a-color-active;
                     float: right;
+                }
+                .span_plus {
+                    line-height: 4rem;
+                }
+                .span_minus {
+                    line-height: 3.3rem;
                 }
             }
         }

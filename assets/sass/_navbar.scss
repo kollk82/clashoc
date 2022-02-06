@@ -1,5 +1,6 @@
 @use 'var' as *;
 @use 'media' as *;
+@use 'logo' as *;
 
 .router-link-active {
     display: block;
@@ -32,14 +33,15 @@
     opacity: 0;
 }
 .navigation {
-    grid-row: 1;
-    grid-column: 1 / -1;
+    position: fixed;
     height: 7rem;
-    position: relative;
+    width: 100vw;
+    z-index: 9999;
+    background-color: $body-bg;
 }
 .nav {
     display: flex;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     justify-content: center;
@@ -51,6 +53,14 @@
     background-position: bottom right;
     background-size: cover;
     z-index: 99;
+    @include medium-up {
+        display: flex !important;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-image: none;
+        margin-right: 5%;
+        height: max-content;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -65,11 +75,14 @@
             hsl(0deg 0% 0%)
         );
         background-size: cover;
+        @include medium-up {
+            display: none;
+        }
     }
     @include navbar-wide {
         background-position: center;
     }
-    
+
     &-icon {
         display: block;
         position: absolute;
@@ -81,6 +94,9 @@
         border-bottom: 4px solid $a-color-active;
         cursor: pointer;
         z-index: 999;
+        @include medium-up {
+            display: none;
+        }
     }
     &-icon-x {
         display: block;
@@ -97,6 +113,9 @@
         -moz-animation: fadeIn-x 0.5s ease forwards;
         -o-animation: fadeIn-x 0.5s ease forwards;
         animation: fadeIn-x 0.5s ease forwards;
+        @include medium-up {
+            display: none;
+        }
 
         &::before {
             content: '';
@@ -127,7 +146,10 @@ nav {
     width: auto;
     height: auto;
     z-index: 101;
-    
+    @include medium-up {
+        flex-direction: row;
+    }
+
     a {
         display: block;
         margin: 1rem 0;
@@ -137,10 +159,13 @@ nav {
         font-size: 200%;
         text-transform: uppercase;
         transition: color 0.2s ease-in-out;
-        letter-spacing: .2rem;
+        letter-spacing: 0.2rem;
         &:hover,
         &:focus {
             color: $a-color-active;
+        }
+        @include medium-up {
+            font-size: 80%;
         }
     }
 }

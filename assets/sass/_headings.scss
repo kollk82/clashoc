@@ -28,6 +28,9 @@ h3 {
     @include galaxy-fold {
         font-size: 110%;
     }
+    @include medium-up{
+        font-size: 90%;
+    }
 }
 h4 {
     font-size: 120%;
