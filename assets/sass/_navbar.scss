@@ -168,4 +168,11 @@ nav {
             font-size: 80%;
         }
     }
+    .support {
+        color: $a-color-active;
+        &:hover,
+        &:focus {
+            color: $a-color-active;
+        }
+    }
 }

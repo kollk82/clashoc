@@ -315,7 +315,7 @@ body {
   position: relative;
   width: max-content;
   height: max-content;
-  color: #6d1d1d;
+  color: #9a2828;
   z-index: 0;
 }
 .router-link-active::after {
@@ -330,7 +330,7 @@ body {
   transform: skew(-15deg);
 }
 .router-link-active:hover {
-  color: #6d1d1d;
+  color: #9a2828;
 }
 
 .page-enter-active,
@@ -405,8 +405,8 @@ body {
   right: 4rem;
   width: 3rem;
   height: 2rem;
-  border-top: 4px solid #6d1d1d;
-  border-bottom: 4px solid #6d1d1d;
+  border-top: 4px solid #9a2828;
+  border-bottom: 4px solid #9a2828;
   cursor: pointer;
   z-index: 999;
 }
@@ -444,7 +444,7 @@ body {
   width: 4px;
   height: 3rem;
   transform: rotate(90deg);
-  background-color: #6d1d1d;
+  background-color: #9a2828;
 }
 .nav-icon-x::after {
   content: "";
@@ -453,7 +453,7 @@ body {
   width: 4px;
   height: 3rem;
   transform: rotate(90deg);
-  background-color: #6d1d1d;
+  background-color: #9a2828;
 }
 
 nav {
@@ -482,12 +482,18 @@ nav a {
   letter-spacing: 0.2rem;
 }
 nav a:hover, nav a:focus {
-  color: #6d1d1d;
+  color: #9a2828;
 }
 @media (min-width: 1200px) {
   nav a {
     font-size: 80%;
   }
+}
+nav .support {
+  color: #9a2828;
+}
+nav .support:hover, nav .support:focus {
+  color: #9a2828;
 }
 
 a {
@@ -543,7 +549,7 @@ p {
 }
 
 .plane_link {
-  color: #6d1d1d;
+  color: #9a2828;
 }
 
 .container {
@@ -633,8 +639,9 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #6d1d1d;
+  background-color: #9a2828;
   transform: rotate(10deg) skew(10deg);
+  border-radius: 2rem;
   z-index: -1;
 }
 .home--text-h h1 {
@@ -728,7 +735,7 @@ p {
   width: 28rem;
   height: 5rem;
   font-size: 130%;
-  background-color: #6d1d1d;
+  background-color: #9a2828;
   border: none;
   overflow: hidden;
   border-radius: 4rem;
@@ -899,7 +906,7 @@ p {
 .gear--content-box h4 {
   display: block;
   margin: 0.5rem auto;
-  color: #6d1d1d;
+  color: #9a2828;
   cursor: pointer;
 }
 .gear--content-box h4 .span_plus,
@@ -910,7 +917,7 @@ p {
   margin-top: 1rem;
   color: #f0f0f0;
   border-radius: 50% 50%;
-  background-color: #6d1d1d;
+  background-color: #9a2828;
   float: right;
 }
 .gear--content-box h4 .span_plus {
@@ -956,7 +963,7 @@ p {
   z-index: 3;
 }
 .gall--h h3 {
-  color: #6d1d1d;
+  color: #9a2828;
 }
 .gall--images {
   width: 100vw;
@@ -968,7 +975,7 @@ p {
   margin: 0 auto;
   position: relative;
   padding: 1rem 0 1rem 1rem;
-  color: #6d1d1d;
+  color: #9a2828;
   cursor: pointer;
   text-align: left;
   background-color: #f0f0f0;
@@ -1013,7 +1020,7 @@ p {
   font-size: 100%;
   background-color: #f0f0f0;
   line-height: 2.7rem;
-  color: #6d1d1d;
+  color: #9a2828;
   padding-left: 0.4rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -1166,8 +1173,13 @@ p {
 }
 .social--box h2 {
   text-align: center;
-  color: #6d1d1d;
+  color: #9a2828;
   padding-bottom: 1rem;
+  background-color: #f0f0f0;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0 gray;
+  text-shadow: 0.5rem 0.5rem 1rem #363636;
 }
 .social--box svg {
   display: block;

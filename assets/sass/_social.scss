@@ -83,6 +83,11 @@
             text-align: center;
             color: $a-color-active;
             padding-bottom: 1rem;
+            background-color: $main-color;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            box-shadow: .5rem .5rem 0 gray;
+            text-shadow: .5rem .5rem 1rem rgb(54, 54, 54);
         }
         svg {
             display: block;
