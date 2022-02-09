@@ -11,7 +11,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 100vh;
+        height: calc(100vh - 7rem);
         z-index: 1;
         background: url('~/assets/img/IMG_3866.jpg') no-repeat center;
         background-size: cover;
@@ -23,7 +23,7 @@
             bottom: 0;
             right: 0;
             width: 100%;
-            height: 100vh;
+            height: calc(100vh - 7rem);
             background-image: radial-gradient(
                 hsl(0deg 0% 0% / 62%),
                 hsl(0deg 0% 0%)
@@ -94,7 +94,7 @@
                     background-color: $main-color;
                     line-height: 2.7rem;
                     color: $a-color-active;
-                    padding-left: .4rem;
+                    padding-left: 0.4rem;
                     font-family: 'Lucida Sans', 'Lucida Sans Regular',
                         'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
                         sans-serif;

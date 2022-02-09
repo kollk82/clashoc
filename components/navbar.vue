@@ -12,7 +12,7 @@
             <div class="nav" v-show="show">
                 <nav>
                     <NuxtLink to="/">Home</NuxtLink>
-                    <NuxtLink to="/gear">My Gear</NuxtLink>
+                    <!-- <NuxtLink to="/gear">My Gear</NuxtLink> -->
                     <NuxtLink to="/gallery">My work</NuxtLink>
                     <NuxtLink to="/packages">Packages</NuxtLink>
                     <NuxtLink to="/contact">Contact</NuxtLink>

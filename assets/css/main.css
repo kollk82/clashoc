@@ -509,7 +509,7 @@ h4 {
 }
 
 h1 {
-  font-size: 220%;
+  font-size: 210%;
 }
 @media (max-width: 280px) {
   h1 {
@@ -611,13 +611,14 @@ p {
 .home--text * {
   display: block;
 }
-.home--text :last-child {
-  margin-bottom: auto;
-}
 .home--text-h {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
   width: 30rem;
+  height: 11rem;
   position: relative;
-  margin: 3rem auto auto;
   letter-spacing: 0.4rem;
   z-index: 0;
 }
@@ -628,8 +629,8 @@ p {
 }
 @media (min-width: 1200px) {
   .home--text-h {
-    width: auto;
     margin-top: 15rem;
+    width: auto;
   }
 }
 .home--text-h::after {
@@ -639,20 +640,30 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #9a2828;
-  transform: rotate(10deg) skew(10deg);
-  border-radius: 2rem;
+  background-image: url(~/assets/img/h_img_outline.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80%;
   z-index: -1;
+}
+@media (min-width: 1200px) {
+  .home--text-h::after {
+    background-size: 85%;
+  }
 }
 .home--text-h h1 {
   text-align: center;
   margin: 0;
-  text-shadow: 1px 1px 2px #262626;
 }
 .home--text-h h2 {
-  margin: 0 auto;
-  text-align: center;
-  line-height: 2rem;
+  margin: 0 0 0 1.5rem;
+  line-height: 0;
+  font-size: 80%;
+}
+@media (min-width: 1200px) {
+  .home--text-h h2 {
+    margin-left: 0;
+  }
 }
 .home--text p {
   text-align: center;
@@ -939,7 +950,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: calc(100vh - 7rem);
   z-index: 1;
   background: url("~/assets/img/IMG_3866.jpg") no-repeat center;
   background-size: cover;
@@ -952,7 +963,7 @@ p {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 7rem);
   background-image: radial-gradient(rgba(0, 0, 0, 0.62), black);
   background-size: cover;
   z-index: 2;
@@ -1057,7 +1068,7 @@ p {
 }
 .shoots--h1 {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 7rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1071,7 +1082,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: calc(100vh - 7rem);
   width: 100%;
   background-image: url("../img/camaro_01.jpg");
   background-repeat: no-repeat;
@@ -1119,7 +1130,7 @@ p {
 }
 .social--h1 {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 7rem);
   display: flex;
   position: relative;
   justify-content: center;
@@ -1139,7 +1150,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 7rem);
   width: 100%;
   background-image: url("../img/IMG_2227.jpg");
   background-repeat: no-repeat;

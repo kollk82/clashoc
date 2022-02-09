@@ -43,21 +43,24 @@
         * {
             display: block;
         }
-        :last-child {
-            margin-bottom: auto;
-        }
         &-h {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
             width: 30rem;
+            height: 11rem;
             position: relative;
-            margin: 3rem auto auto;
+            //margin: 3rem auto auto;
             letter-spacing: 0.4rem;
             z-index: 0;
+            //color: $grey-dark;
             @include galaxy-fold {
                 width: auto;
             }
             @include medium-up {
+                margin-top: 15rem;
                 width: auto;
-                margin-top: 15rem;  
             }
             &::after {
                 content: '';
@@ -66,20 +69,26 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: $a-color-active;
-                transform: rotate(10deg) skew(10deg);
-                border-radius: 2rem;
+                background-image: url(~/assets/img/h_img_outline.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 80%;
                 z-index: -1;
+                @include medium-up {
+                    background-size: 85%;
+                }
             }
             h1 {
                 text-align: center;
                 margin: 0;
-                text-shadow: 1px 1px 2px $grey-dark;
             }
             h2 {
-                margin: 0 auto;
-                text-align: center;
-                line-height: 2rem;
+                margin: 0 0 0 1.5rem;
+                line-height: 0;
+                font-size: 80%;
+                @include medium-up {
+                    margin-left: 0;
+                }
             }
         }
         p {
