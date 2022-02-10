@@ -7,6 +7,22 @@
                 <arrow />
             </div>
             <div class="gall--images">
+                <div class="gall--images-wrapper" @click="showMeetpl = !showMeetpl">
+                    <h3>Portlaoise 30.01.2022</h3>
+                    <img
+                        :src="`/gallery/meets/portlaoise/pl30012022/pl_23.jpg`"
+                        :alt="`Car meet image number 23`"
+                    />
+                </div>
+                <div v-if="showMeetpl">
+                    <figure v-for="(image, i) in 82" :key="i">
+                        <img
+                            :src="`/gallery/meets/portlaoise/pl30012022/pl_${image}.jpg`"
+                            :alt="`Car meet image number ${image}`"
+                        />
+                    </figure>
+                    <a @click="showMeetpl = !showMeetpl"><span>up</span></a>
+                </div>
                 <div class="gall--images-wrapper" @click="showGt86 = !showGt86">
                     <h3>Toyota GT86</h3>
                     <img
@@ -90,6 +106,7 @@ export default {
             showSls: false,
             showVz: false,
             showLeon: false,
+            showMeetpl: false,
             images_gt86: [
                 '1',
                 '2',
@@ -166,6 +183,7 @@ export default {
         this.showSls = false; // might need this.$nextTick
         this.showVz = false;
         this.showLeon = false;
+        this.showMeetpl = false;
     },
 };
 </script>
