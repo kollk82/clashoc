@@ -4,34 +4,26 @@
     display: block;
     position: fixed;
     z-index: 9999;
-    bottom: 2%;
-    right: 2%;
+    bottom: 4rem;
+    right: 4rem;
     width: auto;
-    height: 5rem;
+    height: 4rem;
     background-color: $a-color-active;
-    padding: 1rem 2rem 1rem 4rem;
+    padding: 1rem 2rem;
     cursor: pointer;
     outline: none;
+    border: 0;
+    box-shadow: -1rem -0.5rem 1rem $grey-dark;
     border-radius: 2rem;
-    font-family: 'Metropolis-Black', cursive;
-    font-size: 120%;
+    font-family: 'Metropolis-ExtraLight', cursive;
+    font-size: 100%;
     color: $main-color;
     text-transform: uppercase;
-    @include medium-up{
-        font-size: 100%;
-        padding-left: 5rem;
-        padding-top: 1rem;
-    }
-    &::after {
-        content: '\27F5';
-        height: auto;
-        position: absolute;
-        top: 25%;
-        left: 1rem;
-        font-size: 90%;
-        @include medium-up{
-            left: 1rem;
-            top: 20%;
-        }
+    line-height: 0;
+    @include medium-up {
+        font-size: 80%;
+        bottom: 8rem;
+        right: 4.5rem;
+        height: 5rem;
     }
 }
