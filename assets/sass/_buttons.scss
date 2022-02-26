@@ -19,10 +19,12 @@
     color: $main-color;
     text-transform: uppercase;
     line-height: 0;
+    :last-child{
+        padding-left: 1rem;
+    }
     span{
         display: inline-block;
         vertical-align: middle;
-        outline: 1px solid red;
     }
     @include medium-up {
         font-size: 80%;
