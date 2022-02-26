@@ -3,17 +3,16 @@
 .btn-back {
     display: block;
     position: fixed;
-    z-index: 9999;
     bottom: 4rem;
     right: 4rem;
     width: auto;
     height: 4rem;
-    background-color: $a-color-active;
+    background-color: $grey-dark;
     padding: 1rem 2rem;
     cursor: pointer;
     outline: none;
     border: 0;
-    box-shadow: -1rem -0.5rem 1rem $grey-dark;
+    box-shadow: 0 -0.5rem .5rem $grey-dark;
     border-radius: 2rem;
     font-family: 'Metropolis-ExtraLight', cursive;
     font-size: 100%;
