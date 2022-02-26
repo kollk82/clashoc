@@ -1,11 +1,10 @@
 <template>
     <div class="container">
-        <navbar />
+        <navbar /><logo />
         <div class="social">
             <div class="social--h1">
-                <h1>Contact
-                    <arrow />
-                </h1>
+                <h1>Contact</h1>
+                <arrow />
             </div>
             <div class="social--box">
                 <h2 class="fadeIn-2">Email</h2>
@@ -66,3 +65,12 @@
         <foot />
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            scrollToTop: true,
+        };
+    },
+};
+</script>

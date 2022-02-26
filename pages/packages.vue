@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <navbar />
+        <navbar /><logo />
         <div class="shoots">
             <div class="shoots--h1">
                 <h1>Photo shoot packages</h1>
@@ -19,3 +19,12 @@
         <foot />
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            scrollToTop: true,
+        };
+    },
+};
+</script>

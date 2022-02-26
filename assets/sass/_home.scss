@@ -5,7 +5,6 @@
     grid-row: 2;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: auto;
     height: 100%;
     position: relative;
@@ -21,46 +20,28 @@
         opacity: 0.1;
         transform: rotate(-30deg);
     }
-
     &--text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100%;
-        width: 100%;
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            bottom: -10rem;
-            left: -20rem;
-            width: 20rem;
-            height: 30rem;
-            background: linear-gradient(#000000, #ffffff);
-            opacity: 0.1;
-            transform: rotate(-30deg);
-        }
-        * {
-            display: block;
-        }
+        align-items: center;
         &-h {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-self: center;
-            width: 30rem;
+            align-items: center;
+            width: 40rem;
             height: 11rem;
-            position: relative;
-            //margin: 3rem auto auto;
             letter-spacing: 0.4rem;
             z-index: 0;
-            //color: $grey-dark;
+            padding-top: 1.5rem;
             @include galaxy-fold {
                 width: auto;
             }
-            @include medium-up {
-                margin-top: 15rem;
-                width: auto;
+            @include medium-up{
+                padding-top: 4rem;
+                width: 57rem;
+                height: 17rem;
             }
             &::after {
                 content: '';
@@ -69,25 +50,29 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-image: url(~/assets/img/h_img_outline.png);
+                background-image: url('~/assets/img/h_img_outline.png');
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: 80%;
                 z-index: -1;
                 @include medium-up {
-                    background-size: 85%;
+                    background-size: 75%;
                 }
             }
             h1 {
-                text-align: center;
+                width: max-content;
                 margin: 0;
+                font-size: 180%;
             }
             h2 {
-                margin: 0 0 0 1.5rem;
+                width: max-content;
+                margin: 0 0 0 -11.5rem;
                 line-height: 0;
+                padding-bottom: 1rem;
                 font-size: 80%;
                 @include medium-up {
                     margin-left: 0;
+                    font-size: 100%;
                 }
             }
         }
@@ -160,7 +145,7 @@
             span {
                 margin-bottom: 0 !important;
                 text-transform: uppercase;
-                font-family: 'Open Sans', sans-serif;
+                font-family: 'Metropolis-Medium', sans-serif;
             }
         }
 
@@ -170,7 +155,6 @@
             align-items: center;
             margin-left: auto;
             margin-right: auto;
-            padding-bottom: 0.5rem;
             position: relative;
             width: 28rem;
             height: 5rem;

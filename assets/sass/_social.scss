@@ -28,6 +28,7 @@
         width: 100%;
         height: calc(100vh - 7rem);
         display: flex;
+        flex-direction: column;
         position: relative;
         justify-content: center;
         align-items: center;

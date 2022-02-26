@@ -1,5 +1,6 @@
 @use 'var' as *;
 @use 'media' as *;
+
 .gall {
     grid-column: 1 / -1;
     grid-row: 2;
@@ -41,64 +42,127 @@
         }
     }
     &--images {
+        position: relative;
         width: 100vw;
+        margin: 0 auto;
         height: auto;
+        padding: 4rem 0;
+        background: url('~/assets/img/IMG_3860.jpg') no-repeat center;
+        background-size: cover;
+        z-index: 2;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+            background-image: radial-gradient(
+                hsl(0deg 0% 0% / 62%),
+                hsl(0deg 0% 0%)
+            );
+            background-size: cover;
+            z-index: 2;
+        }
+        @include medium-up {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @include tablet-landscape-up {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         &-wrapper {
-            height: 18rem;
+            height: 20rem;
             width: 35rem;
             margin: 0 auto;
             position: relative;
-            padding: 1rem 0 1rem 1rem;
             color: $a-color-active;
             cursor: pointer;
-            text-align: left;
             background-color: $main-color;
-            border-radius: 1rem 0 0 7rem;
+            border-radius: 1rem 1.5rem 1.5rem 7rem;
             box-shadow: 0px -10px 20px #000;
-            writing-mode: vertical-lr;
+            writing-mode: vertical-rl;
             text-orientation: mixed;
+            z-index: 3;
+            h3 {
+                padding: 0 0.7rem;
+                font-size: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 4.5rem;
+                height: 70%;
+                text-align: center;
+            }
+            @include medium-up {
+                width: 60rem;
+                height: 35rem;
+                h3 {
+                    bottom: 6.5rem;
+                    padding: 0 1rem;
+                    font-size: 110%;
+                }
+            }
+            @include tablet-portrait-up {
+                height: 30rem;
+                width: 53rem;
+                h3 {
+                    bottom: 5rem;
+                    padding: 0 1rem;
+                    font-size: 155%;
+                }
+            }
+            @include tablet-landscape-up {
+                height: 25rem;
+                width: 45rem;
+                h3 {
+                    padding: 0 1.5rem;
+                    font-size: 130%;
+                }
+            }
             img {
                 height: 100%;
+                width: max-content;
                 position: absolute;
                 top: 0;
                 right: 0;
+                background-color: transparent;
+                border-radius: 0 1rem 1rem 7rem;
+                box-shadow: -10px 0px 15px #000;
             }
         }
-        div {
-            display: block;
-            position: relative;
-
-            figure {
-                display: block;
-                width: 27rem;
-                margin: 0 auto;
-                padding: 0;
-                line-height: 0;
-                img {
-                    width: 27rem;
-                    margin-left: 4rem;
-                }
+    }
+}
+div {
+    grid-column: 1/-1;
+    grid-row: 2;
+    .images-show {
+        display: flex;
+        flex-wrap: wrap;
+        @include gallery {
+            flex-direction: row;
+        }
+        figure {
+            line-height: 0;
+            background-color: transparent;
+            flex: 100%;
+            max-width: 100%;
+            @include medium-up {
+                flex: 25%;
             }
-            a {
-                display: block;
-                position: absolute;
-                bottom: 3rem;
-                right: 3rem;
-                span {
-                    display: block;
-                    width: 3rem;
-                    height: 3rem;
-                    border-radius: 50% 50%;
-                    cursor: pointer;
-                    font-size: 100%;
-                    background-color: $main-color;
-                    line-height: 2.7rem;
-                    color: $a-color-active;
-                    padding-left: 0.4rem;
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular',
-                        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-                        sans-serif;
-                }
+            @include tablet-landscape-up {
+                flex: 30%;
+            }
+            @include tablet-portrait-up {
+                flex: 35%;
+            }
+            img {
+                width: 100%;
+                vertical-align: bottom;
             }
         }
     }

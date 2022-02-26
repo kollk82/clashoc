@@ -18,6 +18,11 @@
         @content;
     }
 }
+@mixin tablet-max {
+    @media (min-width: 1000px) {
+        @content;
+    }
+}
 @mixin medium-up {
     @media (min-width: 1200px) {
         @content;
@@ -33,5 +38,8 @@
         @content;
     }
 }
-
-
+@mixin gallery {
+    @media (max-aspect-ratio: 1/1) and (max-width: 599px) {
+        @content;
+    }
+}

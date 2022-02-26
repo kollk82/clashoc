@@ -1,7 +1,6 @@
 <template>
     <div class="container">
-        <navbar />
-        <logo />
+        <navbar /><logo />
         <div class="pageError"><h1>Page not found.</h1></div>
         <foot />
     </div>
@@ -15,3 +14,12 @@
     text-align: center;
 }
 </style>
+<script>
+export default {
+    data() {
+        return {
+            scrollToTop: true,
+        }
+    },
+};
+</script>

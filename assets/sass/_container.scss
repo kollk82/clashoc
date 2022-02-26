@@ -2,7 +2,7 @@
 .container {
     display: grid;
     grid-template-columns: repeat(5, 20vw);
-    grid-template-rows: 7rem auto 7rem;
+    grid-template-rows: 7rem auto max-content;
     min-height: 100vh;
     width: 100vw;
     overflow-y: hidden;

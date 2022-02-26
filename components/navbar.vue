@@ -1,6 +1,5 @@
 <template>
     <div class="navigation">
-        <section class="logo"></section>
         <div
             v-bind:class="{ 'active nav-icon': !show, 'nav-icon-x': show }"
             @click="show = !show"

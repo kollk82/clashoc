@@ -1,7 +1,49 @@
 @use 'var' as *;
 @use 'media' as *;
-@use 'logo' as *;
-
+.logo {
+    display: block;
+    position: fixed;
+    top: 3.5rem;
+    left: 0;
+    height: max-content;
+    width: max-content;
+    text-transform: uppercase;
+    font-size: 120%;
+    margin-left: 4rem;
+    line-height: 0;
+    margin-top: 0.3rem;
+    z-index: 9999;
+    cursor: pointer;
+    @include phone-only {
+        margin-left: 2rem;
+        line-height: 0;
+    }
+    @include medium-up {
+        font-size: 100%;
+    }
+    span {
+        color: $a-color-active;
+    }
+    .sp {
+        color: $main-color;
+    }
+    :last-child {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 2rem;
+            height: 3rem;
+            top: -0.4rem;
+            right: -2rem;
+            background-image: url('~/assets/img/logo_side.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            opacity: 1;
+        }
+    }
+}
 .router-link-active {
     display: block;
     position: relative;
@@ -19,6 +61,10 @@
         height: 100%;
         z-index: -1;
         transform: skew(-15deg);
+        @include medium-up {
+            top: -2.3rem;
+            height: 7rem;
+        }
     }
     &:hover {
         color: $a-color-active;
@@ -56,10 +102,10 @@
     @include medium-up {
         display: flex !important;
         justify-content: flex-end;
-        align-items: flex-start;
         background-image: none;
         margin-right: 5%;
-        height: max-content;
+        height: 100%;
+        width: max-content;
     }
     &::before {
         content: '';
@@ -148,24 +194,31 @@ nav {
     z-index: 101;
     @include medium-up {
         flex-direction: row;
+        width: 100%;
+        height: 100%;
+        width: max-content;
+        z-index: 9998;
     }
-
     a {
         display: block;
         margin: 1rem 0;
-        padding: 1rem 2rem;
         color: $main-color;
         text-align: center;
-        font-size: 200%;
+        font-size: 150%;
+        padding: 2rem;
+        text-shadow: 0.2rem 0.1rem 0.2rem #000;
         text-transform: uppercase;
         transition: color 0.2s ease-in-out;
         letter-spacing: 0.2rem;
+        line-height: 0;
+
         &:hover,
         &:focus {
             color: $a-color-active;
         }
         @include medium-up {
             font-size: 80%;
+            padding: 1.5rem 2rem 1rem 2rem;
         }
     }
     .support {

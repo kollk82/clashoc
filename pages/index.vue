@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <navbar />
+        <logo />
         <section class="bg"></section>
         <section class="home">
             <main class="home--text">
@@ -24,7 +25,9 @@
                 </div>
                 <div class="fadeIn animation-delay-4s">
                     <div class="shake">
-                        <NuxtLink class="home--text-btn" to="/contact">Contact</NuxtLink>
+                        <NuxtLink class="home--text-btn" to="/contact"
+                            >Contact</NuxtLink
+                        >
                     </div>
                 </div>
             </main>
@@ -32,3 +35,12 @@
         <foot />
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            scrollToTop: true,
+        }
+    },
+};
+</script>

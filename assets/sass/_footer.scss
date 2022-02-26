@@ -1,16 +1,21 @@
 @use 'var' as *;
+@use 'media' as *;
 .footer {
     grid-column: 1 / -1;
     grid-row: 3;
     display: flex;
     width: 100%;
+    height: max-content;
+    padding: 1rem 0;
     color: $main-color;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    @include medium-up{
+        height: 7rem;
+        padding: 0;
+    }
     p {
         display: block;
-        border-top: 1px solid $grey-dark;
-        padding: 1rem;
         font-size: 80%;
     }
 }
