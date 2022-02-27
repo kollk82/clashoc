@@ -7,12 +7,12 @@
                 <arrow />
             </div>
             <div class="gall--images">
-                 <NuxtLink to="/gallery/VW_Golf_Gti_Clubsport">
+                <NuxtLink to="/gallery/VW_Golf_Gti_Clubsport">
                     <div class="gall--images-wrapper">
                         <h3>VW Golf GTI Clubsport</h3>
                         <img
-                            :src="`/gallery/img_tumb/3.jpg`"
-                            :alt="`Car meet image number 3`"
+                            :src="'/gallery/img_tumb/3.jpg'"
+                            :alt="`${thumbnail} VW Golf GTI Clubsport`"
                         />
                     </div>
                 </NuxtLink>
@@ -21,7 +21,7 @@
                         <h3>Portlaoise 30.01.22</h3>
                         <img
                             :src="'/gallery/img_tumb/4.jpg'"
-                            :alt="'Car meet image number 4'"
+                            :alt="`${thumbnail} Car meet Portlaoise 2022`"
                         />
                     </div>
                 </NuxtLink>
@@ -30,7 +30,7 @@
                         <h3>Toyota GT86</h3>
                         <img
                             :src="'/gallery/img_tumb/5.jpg'"
-                            :alt="'Toyota GT86 image number 5'"
+                            :alt="`${thumbnail} Toyota GT86`"
                         />
                     </div>
                 </NuxtLink>
@@ -39,7 +39,7 @@
                         <h3>Amg Sls</h3>
                         <img
                             :src="'/gallery/img_tumb/1.jpg'"
-                            :alt="`Mercedes SLS image number 1`"
+                            :alt="`${thumbnail} AMG SLS Roadster`"
                         />
                     </div>
                 </NuxtLink>
@@ -48,7 +48,7 @@
                         <h3>Cupra Formentor VZ</h3>
                         <img
                             :src="'/gallery/img_tumb/2.jpg'"
-                            :alt="'Cupra Formentor VZ image number 2'"
+                            :alt="`${thumbnail} Cupra Formentor VZ`"
                         />
                     </div>
                 </NuxtLink>
@@ -57,7 +57,16 @@
                         <h3>Seat Leon Cupra</h3>
                         <img
                             :src="'/gallery/img_tumb/6.jpg'"
-                            :alt="'Seat Leon Cupra image number 6'"
+                            :alt="`${thumbnail} Seat Leon Cupra`"
+                        />
+                    </div>
+                </NuxtLink>
+                <NuxtLink to="/gallery/abt_transformer">
+                    <div class="gall--images-wrapper">
+                        <h3>Abt Transformer</h3>
+                        <img
+                            :src="'/gallery/img_tumb/7.jpg'"
+                            :alt="`${thumbnail} Cupra Formentor VZ`"
                         />
                     </div>
                 </NuxtLink>
@@ -69,21 +78,9 @@
 <script>
 export default {
     data() {
-        return {
-            showGt86: false,
-            showSls: false,
-            showVz: false,
-            showLeon: false,
-            showMeetpl: false,
-            scrollToTop: true,
-        };
-    },
-    mounted() {
-        this.showGt86 = false; // might need this.$nextTick
-        this.showSls = false; // might need this.$nextTick
-        this.showVz = false;
-        this.showLeon = false;
-        this.showMeetpl = false;
+        return{
+            thumbnail: 'Thumbnail picture of',
+        }
     },
 };
 </script>

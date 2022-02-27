@@ -328,7 +328,7 @@ img {
   cursor: pointer;
   outline: none;
   border: 0;
-  box-shadow: 0 -0.5rem 0.5rem #262626;
+  box-shadow: 0 -0.5rem 0.6rem #262626;
   border-radius: 2rem;
   font-family: "Metropolis-ExtraLight", cursive;
   font-size: 100%;

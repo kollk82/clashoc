@@ -62,11 +62,11 @@
         </div>
         <div
             class="images-show"
-            v-if="$route.params.id === 'leon_cupra' ? !show : show"
+            v-if="$route.params.id === 'abt_transformer' ? !show : show"
         >
             <figure v-for="(image, i) in 12" :key="i">
                 <img
-                    :src="`/gallery/cupra/leon/${image}.jpg`"
+                    :src="`/gallery/abt/abt_${image}.jpg`"
                     :alt="`Seat Leon Cupra image number ${image}`"
                 />
             </figure>
