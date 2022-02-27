@@ -70,6 +70,24 @@
                         />
                     </div>
                 </NuxtLink>
+                <NuxtLink to="/gallery/rs3">
+                    <div class="gall--images-wrapper">
+                        <h3>Audi RS3 Quattro</h3>
+                        <img
+                            :src="'/gallery/img_tumb/rs3.jpg'"
+                            :alt="`${thumbnail} Audi Rs3`"
+                        />
+                    </div>
+                </NuxtLink>
+                <NuxtLink to="/gallery/daly_automotive_solution_meet">
+                    <div class="gall--images-wrapper">
+                        <h3>Daly Automotive Solutions 2021</h3>
+                        <img
+                            :src="'/gallery/img_tumb/das.jpg'"
+                            :alt="`${thumbnail} Daly Automotive Solutions`"
+                        />
+                    </div>
+                </NuxtLink>
             </div>
         </section>
         <foot />
@@ -78,9 +96,9 @@
 <script>
 export default {
     data() {
-        return{
+        return {
             thumbnail: 'Thumbnail picture of',
-        }
+        };
     },
 };
 </script>

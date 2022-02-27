@@ -50,6 +50,18 @@
         </div>
         <div
             class="images-show"
+            v-if="$route.params.id === 'leon_cupra' ? !show : show"
+        >
+            <figure v-for="(image, i) in 12" :key="i">
+                <img
+                    :src="`/gallery/cupra/leon/${image}.jpg`"
+                    :alt="`Leon Cupra image number ${image}`"
+                />
+            </figure>
+            <btn-back />
+        </div>
+        <div
+            class="images-show"
             v-if="$route.params.id === 'cupra_formentor_vz' ? !show : show"
         >
             <figure v-for="(image, i) in 19" :key="i">
@@ -64,10 +76,38 @@
             class="images-show"
             v-if="$route.params.id === 'abt_transformer' ? !show : show"
         >
-            <figure v-for="(image, i) in 12" :key="i">
+            <figure v-for="(image, i) in 21" :key="i">
                 <img
                     :src="`/gallery/abt/abt_${image}.jpg`"
                     :alt="`Seat Leon Cupra image number ${image}`"
+                />
+            </figure>
+            <btn-back />
+        </div>
+        <div
+            class="images-show"
+            v-if="$route.params.id === 'rs3' ? !show : show"
+        >
+            <figure v-for="(image, i) in 21" :key="i">
+                <img
+                    :src="`/gallery/rs3/rs3_${image}.jpg`"
+                    :alt="`Audi RS3 image number ${image}`"
+                />
+            </figure>
+            <btn-back />
+        </div>
+        <div
+            class="images-show"
+            v-if="
+                $route.params.id === 'daly_automotive_solution_meet'
+                    ? !show
+                    : show
+            "
+        >
+            <figure v-for="(image, i) in 32" :key="i">
+                <img
+                    :src="`/gallery/meets/das/das_${image}.jpg`"
+                    :alt="`Daly Automotive Solutions image number ${image}`"
                 />
             </figure>
             <btn-back />

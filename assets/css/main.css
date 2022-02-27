@@ -1011,7 +1011,7 @@ p {
 }
 .gall--images-wrapper h3 {
   padding: 0 0.7rem;
-  font-size: 100%;
+  font-size: 90%;
   position: absolute;
   left: 0;
   bottom: 4.5rem;
@@ -1026,7 +1026,7 @@ p {
   .gall--images-wrapper h3 {
     bottom: 6.5rem;
     padding: 0 1rem;
-    font-size: 110%;
+    font-size: 100%;
   }
 }
 @media (min-width: 600px) and (max-width: 899px) {
@@ -1037,7 +1037,7 @@ p {
   .gall--images-wrapper h3 {
     bottom: 5rem;
     padding: 0 1rem;
-    font-size: 155%;
+    font-size: 125%;
   }
 }
 @media (min-width: 900px) and (max-width: 1199px) {
@@ -1046,8 +1046,9 @@ p {
     width: 45rem;
   }
   .gall--images-wrapper h3 {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     font-size: 130%;
+    height: 80%;
   }
 }
 .gall--images-wrapper img {
@@ -1059,11 +1060,14 @@ p {
   background-color: transparent;
   border-radius: 0 1rem 1rem 7rem;
   box-shadow: -10px 0px 15px #000;
+  line-height: 50px;
+  text-align: center;
 }
 
 div {
   grid-column: 1/-1;
   grid-row: 2;
+  margin: 0 auto;
 }
 div .images-show {
   display: flex;
@@ -1098,6 +1102,7 @@ div .images-show figure {
 div .images-show figure img {
   width: 100%;
   vertical-align: bottom;
+  line-height: 120px;
 }
 
 .shoots {

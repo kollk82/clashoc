@@ -91,7 +91,7 @@
             z-index: 3;
             h3 {
                 padding: 0 0.7rem;
-                font-size: 100%;
+                font-size: 90%;
                 position: absolute;
                 left: 0;
                 bottom: 4.5rem;
@@ -104,7 +104,7 @@
                 h3 {
                     bottom: 6.5rem;
                     padding: 0 1rem;
-                    font-size: 110%;
+                    font-size: 100%;
                 }
             }
             @include tablet-portrait-up {
@@ -113,15 +113,16 @@
                 h3 {
                     bottom: 5rem;
                     padding: 0 1rem;
-                    font-size: 155%;
+                    font-size: 125%;
                 }
             }
             @include tablet-landscape-up {
                 height: 25rem;
                 width: 45rem;
                 h3 {
-                    padding: 0 1.5rem;
+                    padding: 0 1rem;
                     font-size: 130%;
+                    height: 80%;
                 }
             }
             img {
@@ -133,6 +134,8 @@
                 background-color: transparent;
                 border-radius: 0 1rem 1rem 7rem;
                 box-shadow: -10px 0px 15px #000;
+                line-height: 50px;
+                text-align: center;
             }
         }
     }
@@ -140,6 +143,7 @@
 div {
     grid-column: 1/-1;
     grid-row: 2;
+    margin: 0 auto;
     .images-show {
         display: flex;
         flex-wrap: wrap;
@@ -163,6 +167,7 @@ div {
             img {
                 width: 100%;
                 vertical-align: bottom;
+                line-height: 120px;
             }
         }
     }
