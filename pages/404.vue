@@ -14,12 +14,3 @@
     text-align: center;
 }
 </style>
-<script>
-export default {
-    data() {
-        return {
-            scrollToTop: true,
-        }
-    },
-};
-</script>

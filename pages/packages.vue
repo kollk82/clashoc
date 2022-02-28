@@ -19,12 +19,3 @@
         <foot />
     </div>
 </template>
-<script>
-export default {
-    data() {
-        return {
-            scrollToTop: true,
-        };
-    },
-};
-</script>

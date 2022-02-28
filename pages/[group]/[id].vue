@@ -7,11 +7,6 @@
 </template>
 <script>
 export default {
-    data() {
-        return {
-            scrollToTop: true,
-        };
-    },
     methods: {
         goBack() {
             return this.$router.go(-1);

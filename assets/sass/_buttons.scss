@@ -1,35 +1,35 @@
 @use 'var' as *;
 @use 'media' as *;
 .btn-back {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 4rem;
     right: 4rem;
-    width: auto;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     background-color: $grey-dark;
-    padding: 1rem 2rem;
     cursor: pointer;
+    border-radius: 3rem;
     outline: none;
     border: 0;
-    box-shadow: 0 -.5rem .6rem $grey-dark;
-    border-radius: 2rem;
-    font-family: 'Metropolis-ExtraLight', cursive;
-    font-size: 100%;
-    color: $main-color;
-    text-transform: uppercase;
-    line-height: 0;
-    :last-child{
-        padding-left: 1rem;
+    transition: all .3s ease-in;
+    span {
+        transition: all .3s ease-in;
+        font-family: 'Metropolis-ExtraLight', cursive;
+        font-size: 100%;
+        color: $main-color;
+        line-height: 0;
     }
-    span{
-        display: inline-block;
-        vertical-align: middle;
+    &:hover,
+    &:focus {
+        background-color: $main-color;
+        span {
+            color: $grey-dark;
+        }
     }
     @include medium-up {
         font-size: 80%;
-        bottom: 8rem;
-        right: 4.5rem;
-        height: 5rem;
     }
 }
