@@ -61,12 +61,12 @@
                         />
                     </div>
                 </NuxtLink>
-                <NuxtLink to="/gallery/abt_transformer">
+                <NuxtLink to="/gallery/abt_transporter">
                     <div class="gall--images-wrapper">
-                        <h3>Abt Transformer</h3>
+                        <h3>Abt Transporter</h3>
                         <img
                             :src="'/gallery/img_tumb/7.jpg'"
-                            :alt="`${thumbnail} Cupra Formentor VZ`"
+                            :alt="`${thumbnail} VW ABT Transporter`"
                         />
                     </div>
                 </NuxtLink>
@@ -79,7 +79,16 @@
                         />
                     </div>
                 </NuxtLink>
-                <NuxtLink to="/gallery/daly_automotive_solution_meet">
+                 <NuxtLink to="/meets/street_beasts_irl">
+                    <div class="gall--images-wrapper">
+                        <h3>Street Beasts Ireland 2021</h3>
+                        <img
+                            :src="'/gallery/img_tumb/9.jpg'"
+                            :alt="`${thumbnail} streetbeastsirl`"
+                        />
+                    </div>
+                </NuxtLink>
+                <NuxtLink to="/meets/daly_automotive_solution_meet">
                     <div class="gall--images-wrapper">
                         <h3>Daly Automotive Solutions 2021</h3>
                         <img

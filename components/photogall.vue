@@ -74,12 +74,12 @@
         </div>
         <div
             class="images-show"
-            v-if="$route.params.id === 'abt_transformer' ? !show : show"
+            v-if="$route.params.id === 'abt_transporter' ? !show : show"
         >
             <figure v-for="(image, i) in 21" :key="i">
                 <img
                     :src="`/gallery/abt/abt_${image}.jpg`"
-                    :alt="`Seat Leon Cupra image number ${image}`"
+                    :alt="`VW ABT Transporter image number ${image}`"
                 />
             </figure>
             <btn-back />
@@ -98,11 +98,19 @@
         </div>
         <div
             class="images-show"
-            v-if="
-                $route.params.id === 'daly_automotive_solution_meet'
-                    ? !show
-                    : show
-            "
+            v-if="$route.params.id === 'street_beasts_irl' ? !show : show"
+        >
+            <figure v-for="(image, i) in 28" :key="i">
+                <img
+                    :src="`/gallery/meets/sbo/${image}.jpg`"
+                    :alt="`Street Beasts IRL image number ${image}`"
+                />
+            </figure>
+            <btn-back />
+        </div>
+        <div
+            class="images-show"
+            v-if="$route.params.id === 'daly_automotive_solution_meet' ? !show : show"
         >
             <figure v-for="(image, i) in 32" :key="i">
                 <img
