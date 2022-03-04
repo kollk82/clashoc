@@ -79,16 +79,25 @@
                         />
                     </div>
                 </NuxtLink>
+                <NuxtLink to="/meets/northeast2021">
+                    <div class="gall--images-wrapper">
+                        <h3>Cars & coffee Northeast 2021</h3>
+                        <img
+                            :src="'/gallery/img_tumb/11.jpg'"
+                            :alt="`${thumbnail} Car meet Portlaoise 2021`"
+                        />
+                    </div>
+                </NuxtLink>
                 <NuxtLink to="/meets/portlaoise2021">
                     <div class="gall--images-wrapper">
-                        <h3>Portlaoise 2021</h3>
+                        <h3>Cars & coffee Portlaoise 2021</h3>
                         <img
                             :src="'/gallery/img_tumb/10.jpg'"
                             :alt="`${thumbnail} Car meet Portlaoise 2021`"
                         />
                     </div>
                 </NuxtLink>
-                 <NuxtLink to="/meets/street_beasts_irl">
+                <NuxtLink to="/meets/street_beasts_irl">
                     <div class="gall--images-wrapper">
                         <h3>Street Beasts Ireland 2021</h3>
                         <img

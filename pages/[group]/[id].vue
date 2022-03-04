@@ -7,18 +7,22 @@
 </template>
 <script>
 export default {
-    methods: {
-        goBack() {
-            return this.$router.go(-1);
-        },
-    },
-    data: function () {
+    data() {
         return {
             // group is name of the url param we created
             groupId: this.$route.params.group,
             // id is name of the url param we created
             userId: this.$route.params.id,
+            show: false,
         };
+    },
+    mounted() {
+        this.show = false; // might need this.$nextTick
+    },
+    methods: {
+        goBack() {
+            return this.$router.go(-1);
+        },
     },
 };
 </script>

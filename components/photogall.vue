@@ -98,9 +98,21 @@
         </div>
         <div
             class="images-show"
+            v-if="$route.params.id === 'northeast2021' ? !show : show"
+        >
+            <figure v-for="(image, i) in 141" :key="i">
+                <img
+                    :src="`/gallery/meets/northeast/2021/${image}.jpg`"
+                    :alt="`Car meet image number ${image}`"
+                />
+            </figure>
+            <btn-back />
+        </div>
+        <div
+            class="images-show"
             v-if="$route.params.id === 'portlaoise2021' ? !show : show"
         >
-            <figure v-for="(image, i) in 98" :key="i">
+            <figure v-for="(image, i) in 106" :key="i">
                 <img
                     :src="`/gallery/meets/portlaoise/pl2021/${image}.jpg`"
                     :alt="`Car meet image number ${image}`"
@@ -140,18 +152,13 @@
 </template>
 <script>
 export default {
-    scrollToTop: true,
-    
     data() {
         return {
             show: false,
-            scrollToTop: true,
         };
     },
     mounted() {
         this.show = false; // might need this.$nextTick
-        this.show1 = false;
-        this.scrollToTop = true;
     },
 };
 </script>
