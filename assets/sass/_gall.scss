@@ -136,6 +136,7 @@
                 box-shadow: -10px 0px 15px #000;
                 line-height: 50px;
                 text-align: center;
+                z-index: 3;
             }
         }
     }
@@ -146,7 +147,14 @@ div {
     margin: 0 auto;
     .images-show {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        h1{
+            display: block;
+            width: 100vw;
+            text-align: center;
+            margin: 3rem 0;
+        }
         @include gallery {
             flex-direction: row;
         }

@@ -19,10 +19,5 @@ export default {
     mounted() {
         this.show = false; // might need this.$nextTick
     },
-    methods: {
-        goBack() {
-            return this.$router.go(-1);
-        },
-    },
 };
 </script>

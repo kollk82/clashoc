@@ -1,11 +1,16 @@
 <template>
-    <button class="btn-back" @click="goBack()"><span>&#8592;</span></button>
+    <button class="btn-back" @click="test">
+        <span>{{ htmlData }}</span>
+    </button>
 </template>
 <script>
 export default {
-    methods: {
-        goBack() {
-            return this.$router.go(-1);
+    props: {
+        htmlData: {
+            type: String,
+        },
+        test: {
+            type: Function,
         },
     },
 };

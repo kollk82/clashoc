@@ -2,6 +2,18 @@
     <div>
         <div
             class="images-show"
+            v-if="$route.params.id === 'northeast032022' ? !show : show"
+        >
+            <figure v-for="(image, i) in 127" :key="i">
+                <img
+                    :src="`/gallery/meets/northeast/2022/03/${image}.jpg`"
+                    :alt="`Car meet image number ${image}`"
+                />
+            </figure>
+            <btn-back :htmlData="html_data" :test="goBack" />
+        </div>
+        <div
+            class="images-show"
             v-if="$route.params.id === 'VW_Golf_Gti_Clubsport' ? !show : show"
         >
             <figure v-for="(image, i) in 16" :key="i">
@@ -10,7 +22,7 @@
                     :alt="`Car meet image number ${image}`"
                 />
             </figure>
-            <btn-back />
+            <btn-back :htmlData="html_data" :test="goBack" />
         </div>
         <div
             class="images-show"
@@ -22,7 +34,7 @@
                     :alt="`Car meet image number ${image}`"
                 />
             </figure>
-            <btn-back />
+            <btn-back :htmlData="html_data" :test="goBack" />
         </div>
         <div
             class="images-show"
@@ -34,7 +46,7 @@
                     :alt="`Toyota GT86 image number ${image}`"
                 />
             </figure>
-            <btn-back />
+            <btn-back :htmlData="html_data" :test="goBack" />
         </div>
         <div
             class="images-show"
@@ -46,7 +58,7 @@
                     :alt="`Mercedes SLS image number ${image}`"
                 />
             </figure>
-            <btn-back />
+            <btn-back :htmlData="html_data" :test="goBack" />
         </div>
         <div
             class="images-show"
@@ -58,7 +70,7 @@
                     :alt="`Leon Cupra image number ${image}`"
                 />
             </figure>
-            <btn-back />
+            <btn-back :htmlData="html_data" :test="goBack" />
         </div>
         <div
             class="images-show"
@@ -70,7 +82,7 @@
                     :alt="`Cupra Formentor VZ image number ${image}`"
                 />
             </figure>
-            <btn-back />
+            <btn-back :htmlData="html_data" :test="goBack" />
         </div>
         <div
             class="images-show"
@@ -82,7 +94,7 @@
                     :alt="`VW ABT Transporter image number ${image}`"
                 />
             </figure>
-            <btn-back />
+            <btn-back :htmlData="html_data" :test="goBack" />
         </div>
         <div
             class="images-show"
@@ -94,7 +106,7 @@
                     :alt="`Audi RS3 image number ${image}`"
                 />
             </figure>
-            <btn-back />
+            <btn-back :htmlData="html_data" :test="goBack" />
         </div>
         <div
             class="images-show"
@@ -106,7 +118,7 @@
                     :alt="`Car meet image number ${image}`"
                 />
             </figure>
-            <btn-back />
+            <btn-back :htmlData="html_data" :test="goBack" />
         </div>
         <div
             class="images-show"
@@ -118,7 +130,7 @@
                     :alt="`Car meet image number ${image}`"
                 />
             </figure>
-            <btn-back />
+            <btn-back :htmlData="html_data" :test="goBack" />
         </div>
         <div
             class="images-show"
@@ -130,7 +142,7 @@
                     :alt="`Street Beasts IRL image number ${image}`"
                 />
             </figure>
-            <btn-back />
+            <btn-back :htmlData="html_data" :test="goBack" />
         </div>
         <div
             class="images-show"
@@ -146,15 +158,21 @@
                     :alt="`Daly Automotive Solutions image number ${image}`"
                 />
             </figure>
-            <btn-back />
+            <btn-back :htmlData="html_data" :test="goBack" />
         </div>
     </div>
 </template>
 <script>
 export default {
+    methods: {
+        goBack() {
+            return this.$router.go(-1);
+        },
+    },
     data() {
         return {
             show: false,
+            html_data: '<',
         };
     },
     mounted() {

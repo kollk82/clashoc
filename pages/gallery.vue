@@ -7,6 +7,15 @@
                 <arrow />
             </div>
             <div class="gall--images">
+                <NuxtLink to="/meets/northeast032022">
+                    <div class="gall--images-wrapper">
+                        <h3>Northeast 03.2022</h3>
+                        <img
+                            :src="'/gallery/img_tumb/12.jpg'"
+                            :alt="`${thumbnail} Car meet Portlaoise March 2022`"
+                        />
+                    </div>
+                </NuxtLink>
                 <NuxtLink to="/gallery/VW_Golf_Gti_Clubsport">
                     <div class="gall--images-wrapper">
                         <h3>VW Golf GTI Clubsport</h3>

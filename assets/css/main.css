@@ -335,7 +335,9 @@ img {
 .btn-back span {
   transition: all 0.3s ease-in;
   font-family: "Metropolis-ExtraLight", cursive;
-  font-size: 100%;
+  font-size: 170%;
+  margin-top: 0.4rem;
+  margin-right: 0.2rem;
   color: #f0f0f0;
   line-height: 0;
 }
@@ -1060,6 +1062,7 @@ p {
   box-shadow: -10px 0px 15px #000;
   line-height: 50px;
   text-align: center;
+  z-index: 3;
 }
 
 div {
@@ -1069,7 +1072,14 @@ div {
 }
 div .images-show {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+}
+div .images-show h1 {
+  display: block;
+  width: 100vw;
+  text-align: center;
+  margin: 3rem 0;
 }
 @media (max-aspect-ratio: 1/1) and (max-width: 599px) {
   div .images-show {
