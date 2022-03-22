@@ -110,6 +110,18 @@
         </div>
         <div
             class="images-show"
+            v-if="$route.params.id === 'wexford2021' ? !show : show"
+        >
+            <figure v-for="(image, i) in 68" :key="i">
+                <img
+                    :src="`/gallery/meets/wexford/2021/${image}.jpg`"
+                    :alt="`Car meet image number ${image}`"
+                />
+            </figure>
+            <btn-back :htmlData="html_data" :test="goBack" />
+        </div>
+        <div
+            class="images-show"
             v-if="$route.params.id === 'northeast2021' ? !show : show"
         >
             <figure v-for="(image, i) in 141" :key="i">
