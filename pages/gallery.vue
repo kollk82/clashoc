@@ -16,8 +16,6 @@
                         />
                     </div>
                 </NuxtLink>
-            </div>
-            <div class="gall--images">
                 <NuxtLink to="/meets/northeast032022">
                     <div class="gall--images-wrapper">
                         <h3>Northeast 03.2022</h3>
