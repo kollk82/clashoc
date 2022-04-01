@@ -1,5 +1,5 @@
 <template>
     <div class="arrow">
-        <span>&#8595;</span>
+        <span><h5>scroll up</h5></span>
     </div>
 </template>

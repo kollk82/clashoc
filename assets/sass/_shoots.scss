@@ -26,22 +26,24 @@
         );
         z-index: 1;
     }
-    h1 {
-        width: 42rem;
-        text-align: center;
-        padding: 1.5rem 0;
-        z-index: 2;
-    }
     &--h1 {
         width: 100%;
         height: calc(100vh - 7rem);
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         background-image: url('../img/camaro.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        h1 {
+            display: flex;
+            align-items: flex-end;
+            height: calc(50vh - 7rem);
+            z-index: 3;
+            text-align: center;
+        }
     }
     &--content {
         display: flex;

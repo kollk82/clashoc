@@ -38,7 +38,10 @@
         background-size: cover;
         background-position: center;
         h1 {
-            z-index: 2;
+            display: flex;
+            align-items: flex-end;
+            height: calc(50vh - 7rem);
+            z-index: 3;
         }
     }
 
@@ -47,14 +50,14 @@
         position: relative;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
+        padding-right: 3rem;
         height: calc(100vh - 7rem);
         width: 100%;
         background-image: url('../img/IMG_2227.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        margin-top: auto;
         &::before {
             content: '';
             position: absolute;
@@ -73,36 +76,42 @@
         @include medium-up {
             flex-wrap: wrap;
         }
-        h2,
-        svg,
-        h4,
         a {
-            display: block;
-            z-index: 3;
+            display: flex;
+            height: max-content;
+            width: max-content;
+            z-index: 1;
+            align-items: center;
+            justify-content: center;
+            padding-right: 3rem;
         }
-        h2 {
-            text-align: center;
-            color: $a-color-active;
-            padding-bottom: 1rem;
-            background-color: $main-color;
-            padding: 1rem 2rem;
-            border-radius: 1rem;
-            box-shadow: 0.5rem 0.5rem 0 gray;
-            text-shadow: 0.5rem 0.5rem 1rem rgb(54, 54, 54);
+        h1 {
+            margin-right: 2rem;
+            font-size: 100%;
+            letter-spacing: 0.3rem;
+            font-family: 'Metropolis-ExtraLight';
         }
         svg {
             display: block;
-            width: max-content;
-            margin: 1rem auto 0 auto;
-            @include medium-up {
-                display: none;
+            padding-top: 1rem;
+            width: 10rem;
+            transition: transform 0.3s;
+            background: linear-gradient(
+                45deg,
+                #405de6,
+                #5851db,
+                #833ab4,
+                #c13584,
+                #e1306c,
+                #fd1d1d
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            &:hover {
+                transform: scale(1.2);
+                transform-origin: center;
             }
-        }
-        h4 {
-            padding: 1.5rem 0 7rem 0;
-            text-decoration: underline;
-            font-weight: 100;
-            text-align: center;
         }
     }
 }

@@ -305,17 +305,17 @@ img {
   animation: pulse 5s infinite;
 }
 
-@keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+/* @keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+} */
 .btn-back {
   display: flex;
   justify-content: center;
@@ -354,14 +354,29 @@ img {
 }
 
 .arrow {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5rem;
   width: auto;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 4rem;
+  height: 50vh;
+  z-index: 3;
 }
 .arrow span {
-  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+  transform: rotate(45deg);
+  border-bottom: 2px solid #f0f0f0;
+  border-right: 2px solid #f0f0f0;
+}
+.arrow span h5 {
+  font-family: "Metropolis-ExtraLight";
+  letter-spacing: 0.2rem;
+  transform: rotate(-45deg);
   text-align: center;
+  font-size: 1rem;
 }
 
 html {
@@ -950,13 +965,11 @@ p {
   background-size: cover;
   z-index: 2;
 }
-.gall--h h1,
-.gall--h h3 {
-  text-align: center;
+.gall--h h1 {
+  display: flex;
+  align-items: flex-end;
+  height: calc(50vh - 7rem);
   z-index: 3;
-}
-.gall--h h3 {
-  color: #c13333;
 }
 .gall--images {
   position: relative;
@@ -1137,22 +1150,24 @@ div .images-show figure img {
   background-image: radial-gradient(rgba(0, 0, 0, 0.42), black);
   z-index: 1;
 }
-.shoots h1 {
-  width: 42rem;
-  text-align: center;
-  padding: 1.5rem 0;
-  z-index: 2;
-}
 .shoots--h1 {
   width: 100%;
   height: calc(100vh - 7rem);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-image: url("../img/camaro.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.shoots--h1 h1 {
+  display: flex;
+  align-items: flex-end;
+  height: calc(50vh - 7rem);
+  z-index: 3;
+  text-align: center;
 }
 .shoots--content {
   display: flex;
@@ -1220,21 +1235,24 @@ div .images-show figure img {
   background-position: center;
 }
 .social--h1 h1 {
-  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  height: calc(50vh - 7rem);
+  z-index: 3;
 }
 .social--box {
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  padding-right: 3rem;
   height: calc(100vh - 7rem);
   width: 100%;
   background-image: url("../img/IMG_2227.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: auto;
 }
 .social--box::before {
   content: "";
@@ -1253,38 +1271,34 @@ div .images-show figure img {
     flex-wrap: wrap;
   }
 }
-.social--box h2,
-.social--box svg,
-.social--box h4,
 .social--box a {
-  display: block;
-  z-index: 3;
+  display: flex;
+  height: max-content;
+  width: max-content;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  padding-right: 3rem;
 }
-.social--box h2 {
-  text-align: center;
-  color: #c13333;
-  padding-bottom: 1rem;
-  background-color: #f0f0f0;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  box-shadow: 0.5rem 0.5rem 0 gray;
-  text-shadow: 0.5rem 0.5rem 1rem #363636;
+.social--box h1 {
+  margin-right: 2rem;
+  font-size: 100%;
+  letter-spacing: 0.3rem;
+  font-family: "Metropolis-ExtraLight";
 }
 .social--box svg {
   display: block;
-  width: max-content;
-  margin: 1rem auto 0 auto;
+  padding-top: 1rem;
+  width: 10rem;
+  transition: transform 0.3s;
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-@media (min-width: 1200px) {
-  .social--box svg {
-    display: none;
-  }
-}
-.social--box h4 {
-  padding: 1.5rem 0 7rem 0;
-  text-decoration: underline;
-  font-weight: 100;
-  text-align: center;
+.social--box svg:hover {
+  transform: scale(1.2);
+  transform-origin: center;
 }
 
 .footer {

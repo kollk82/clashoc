@@ -1,10 +1,26 @@
+@use 'var' as *;
 .arrow {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5rem;
     width: auto;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 4rem;
+    height: 50vh;
+    z-index: 3;
     span {
-        font-size: 10rem;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        width: 5rem;
+        transform: rotate(45deg);
+        border-bottom: 2px solid $main-color;
+        border-right: 2px solid $main-color;
+        h5 {
+            font-family: 'Metropolis-ExtraLight';
+            letter-spacing: 0.2rem;
+            transform: rotate(-45deg);
+            text-align: center;
+            font-size: 1rem;
+        }
     }
 }

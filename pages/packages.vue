@@ -4,6 +4,7 @@
         <div class="shoots">
             <div class="shoots--h1">
                 <h1>Photo shoot packages</h1>
+                <arrow />
             </div>
             <div class="shoots--content">
                 <div class="shoots--content-box">
