@@ -8,17 +8,15 @@
                 <arrow />
             </div>
             <div class="gall--images">
-                <div
-                    class="gall--images-wrapper coming"
-                    data-coming="coming soon"
-                >
-                    <h3 class="h3">Dubshed 04.2022</h3>
-                    <img
-                        :src="`/gallery/meets/portlaoise/pl032022/100.jpg`"
-                        :alt="`${thumbnail} Car meet Portlaoise March 2022`"
-                    />
-                </div>
-
+                <NuxtLink to="/meets/dubshed2022">
+                    <div class="gall--images-wrapper">
+                        <h3 class="h3">Dubshed 2022</h3>
+                        <img
+                            :src="'/gallery/img_tumb/15.jpg'"
+                            :alt="`${thumbnail} Car meet Dubshed 2022`"
+                        />
+                    </div>
+                </NuxtLink>
                 <NuxtLink to="/meets/portlaoise032022">
                     <div class="gall--images-wrapper">
                         <h3>Portlaoise 03.2022</h3>
@@ -33,7 +31,7 @@
                         <h3>Northeast 03.2022</h3>
                         <img
                             :src="'/gallery/img_tumb/12.jpg'"
-                            :alt="`${thumbnail} Car meet Portlaoise March 2022`"
+                            :alt="`${thumbnail} Car meet Northeast March 2022`"
                         />
                     </div>
                 </NuxtLink>
@@ -168,30 +166,3 @@ export default {
     },
 };
 </script>
-<style scoped>
-.h3 {
-    padding-left: 1.5rem;
-}
-.coming {
-    position: relative;
-}
-.coming::before {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: attr(data-coming);
-    font-size: 178%;
-    background-color:#000 ;
-    color: rgb(180, 51, 51);
-    top: -1rem;
-    left: 15rem;
-    position: absolute;
-    width: 10rem;
-    height: max-content;
-    padding-inline: 2rem;
-    z-index: 999;
-    transform: rotate(-65deg);
-    margin: auto;
-    border-radius: 1rem;
-}
-</style>

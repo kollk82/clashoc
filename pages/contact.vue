@@ -20,7 +20,7 @@
                         /></svg
                 ></a>
                 <a
-                    href="https://www.instagram.com/clashofcars182/ "
+                    href="https://www.instagram.com/clashofcars.dev/ "
                     target="_blank"
                 >
                     <h1 class="off on">instagram</h1>

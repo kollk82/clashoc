@@ -17,7 +17,7 @@
                 </p>
                 <div class="home--text-dm fadeIn animation-delay-3s">
                     <a
-                        href="https://www.instagram.com/clashofcars182/ "
+                        href="https://www.instagram.com/clashofcars.dev/ "
                         target="_blank"
                         ><i class="fab fa-instagram icon-insta"></i>
                         <span>DM for enquries</span></a

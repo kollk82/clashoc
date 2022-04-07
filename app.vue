@@ -19,7 +19,7 @@ export default {
                 {
                     name: 'viewport',
                     content:
-                        'width=device-width, initial-scale=1, maximum-scale=1',
+                        'width=device-width, initial-scale=1, maximum-scale= 2, user-scalable=yes'
                 },
             ],
             link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
