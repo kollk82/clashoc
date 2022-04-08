@@ -158,17 +158,20 @@ div {
         }
         figure {
             line-height: 0;
-            background-color: transparent;
             flex: 100%;
             max-width: 100%;
+            padding-block: 2rem;
             @include medium-up {
-                flex: 25%;
+                flex: 35%;
+                padding: 3rem;
             }
             @include tablet-landscape-up {
-                flex: 30%;
+                flex: 35%;
+                padding: 2rem;
             }
             @include tablet-portrait-up {
                 flex: 35%;
+                padding: 2rem;
             }
             img {
                 width: 100%;
