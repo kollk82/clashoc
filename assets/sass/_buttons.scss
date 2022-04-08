@@ -1,34 +1,25 @@
 @use 'var' as *;
 @use 'media' as *;
 .btn-back {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     position: fixed;
     bottom: 4rem;
     right: 4rem;
     width: 5rem;
     height: 5rem;
-    background-color: $grey-dark;
+    background-image: url('../img/bmc-logo-yellow.png');
+    background-position: center;
+    background-size: contain;
     cursor: pointer;
     border-radius: 3rem;
     outline: none;
     border: 0;
     transition: all 0.3s ease-in;
-    span {
-        transition: all 0.3s ease-in;
-        font-family: 'Metropolis-ExtraLight', cursive;
-        font-size: 170%;
-        margin-top: 0.4rem;
-        margin-right: 0.2rem;
-        color: $main-color;
-        line-height: 0;
-    }
     &:hover,
     &:focus {
-        background-color: $main-color;
-        span {
-            color: $grey-dark;
+        background-image: url('../img/bmc-logo-yellow.png');
+        @include medium-up {
+            background-image: url('../img/bmc-logo.png');
         }
     }
     @include medium-up {

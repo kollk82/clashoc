@@ -10,7 +10,7 @@
                     :alt="`Car meet image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -22,7 +22,7 @@
                     :alt="`Car meet image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -34,7 +34,7 @@
                     :alt="`Car meet image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -46,7 +46,7 @@
                     :alt="`Car meet image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -58,7 +58,7 @@
                     :alt="`Car meet image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -70,7 +70,7 @@
                     :alt="`Toyota GT86 image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -82,7 +82,7 @@
                     :alt="`Mercedes SLS image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -94,7 +94,7 @@
                     :alt="`Leon Cupra image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -106,7 +106,7 @@
                     :alt="`Cupra Formentor VZ image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -118,7 +118,7 @@
                     :alt="`VW ABT Transporter image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -130,7 +130,7 @@
                     :alt="`Audi RS3 image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -142,7 +142,7 @@
                     :alt="`Car meet image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -154,7 +154,7 @@
                     :alt="`Car meet image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -166,7 +166,7 @@
                     :alt="`Car meet image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -178,7 +178,7 @@
                     :alt="`Street Beasts IRL image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
         <div
             class="images-show"
@@ -194,21 +194,15 @@
                     :alt="`Daly Automotive Solutions image number ${image}`"
                 />
             </figure>
-            <btn-back :htmlData="html_data" :test="goBack" />
+            <btn-back />
         </div>
     </div>
 </template>
 <script>
 export default {
-    methods: {
-        goBack() {
-            return this.$router.go(-1);
-        },
-    },
     data() {
         return {
             show: false,
-            html_data: '<',
         };
     },
     mounted() {

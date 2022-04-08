@@ -222,10 +222,8 @@ nav {
         }
     }
     .support {
-        color: $a-color-active;
-        &:hover,
-        &:focus {
-            color: $a-color-active;
+        img {
+            width: 14rem;
         }
     }
 }

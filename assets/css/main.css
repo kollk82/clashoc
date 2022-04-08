@@ -317,35 +317,28 @@ img {
     }
 } */
 .btn-back {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   position: fixed;
   bottom: 4rem;
   right: 4rem;
   width: 5rem;
   height: 5rem;
-  background-color: #262626;
+  background-image: url("../img/bmc-logo-yellow.png");
+  background-position: center;
+  background-size: contain;
   cursor: pointer;
   border-radius: 3rem;
   outline: none;
   border: 0;
   transition: all 0.3s ease-in;
 }
-.btn-back span {
-  transition: all 0.3s ease-in;
-  font-family: "Metropolis-ExtraLight", cursive;
-  font-size: 170%;
-  margin-top: 0.4rem;
-  margin-right: 0.2rem;
-  color: #f0f0f0;
-  line-height: 0;
-}
 .btn-back:hover, .btn-back:focus {
-  background-color: #f0f0f0;
+  background-image: url("../img/bmc-logo-yellow.png");
 }
-.btn-back:hover span, .btn-back:focus span {
-  color: #262626;
+@media (min-width: 1200px) {
+  .btn-back:hover, .btn-back:focus {
+    background-image: url("../img/bmc-logo.png");
+  }
 }
 @media (min-width: 1200px) {
   .btn-back {
@@ -641,11 +634,8 @@ nav a:hover, nav a:focus {
     padding: 1.5rem 2rem 1rem 2rem;
   }
 }
-nav .support {
-  color: #c13333;
-}
-nav .support:hover, nav .support:focus {
-  color: #c13333;
+nav .support img {
+  width: 14rem;
 }
 
 a {

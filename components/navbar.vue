@@ -16,11 +16,13 @@
                     <NuxtLink to="/packages">Packages</NuxtLink>
                     <NuxtLink to="/contact">Contact</NuxtLink>
                     <a
-                        class="support"
                         href="https://www.buymeacoffee.com/clashofcars182"
-                        target="_blank"
-                        >Buy me a coffee☕</a
+                        target="_blank" class="support"
                     >
+                        <img
+                            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+                            alt="Buy Me A Coffee"
+                    /></a>
                 </nav>
             </div>
         </transition>
