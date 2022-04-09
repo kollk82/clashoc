@@ -4,7 +4,7 @@
             class="images-show"
             v-if="$route.params.id === 'dubshed2022' ? !show : show"
         >
-            <figure v-for="(image, i) in 287" :key="i">
+            <figure v-for="(image, i) in 354" :key="i">
                 <img
                     :src="`/gallery/meets/dubshed2022/${image}.jpg`"
                     :alt="`Car meet image number ${image}`"
