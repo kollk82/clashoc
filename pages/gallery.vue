@@ -8,6 +8,15 @@
                 <arrow />
             </div>
             <div class="gall--images">
+                <NuxtLink to="/meets/outcasts_ire">
+                    <div class="gall--images-wrapper">
+                        <h3 class="h3">Outcasts_ire<br />K4 Media</h3>
+                        <img
+                            :src="'/gallery/img_tumb/16.jpg'"
+                            :alt="`${thumbnail} Car meet Outcasts_ire 2022`"
+                        />
+                    </div>
+                </NuxtLink>
                 <NuxtLink to="/meets/dubshed2022">
                     <div class="gall--images-wrapper">
                         <h3 class="h3">Dubshed 2022</h3>
