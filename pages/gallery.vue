@@ -8,7 +8,7 @@
                 <arrow />
             </div>
             <div class="gall--images">
-                <!-- <NuxtLink to="/meets/athy_meet"> -->
+                <NuxtLink to="/meets/athy_meet">
                     <div class="gall--images-wrapper">
                         <h3 class="h3">Athy Car Meet</h3>
                         <img
@@ -16,7 +16,7 @@
                             :alt="`${thumbnail} Athy car meet 2022`"
                         />
                     </div>
-                <!-- </NuxtLink> -->
+                </NuxtLink>
                 <NuxtLink to="/meets/outcasts_ire">
                     <div class="gall--images-wrapper">
                         <h3 class="h3">Outcasts_ire<br />K4 Media</h3>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!-- <div
+        <div
             class="images-show"
             v-if="$route.params.id === 'athy_meet' ? !show : show"
         >
@@ -11,7 +11,7 @@
                 />
             </figure>
             <btn-back />
-        </div> -->
+        </div>
         <div
             class="images-show"
             v-if="$route.params.id === 'outcasts_ire' ? !show : show"
