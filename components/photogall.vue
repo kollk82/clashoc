@@ -4,7 +4,7 @@
             class="images-show"
             v-if="$route.params.id === 'drift_games' ? !show : show"
         >
-            <figure v-for="(image, i) in 95" :key="i">
+            <figure v-for="(image, i) in 242" :key="i">
                 <img
                     :src="`/gallery/meets/driftgames/${image}.jpg`"
                     :alt="`Car meet image number ${image}`"

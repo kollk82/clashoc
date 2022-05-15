@@ -1097,7 +1097,7 @@ div .images-show figure {
 }
 @media (min-width: 1200px) {
   div .images-show figure {
-    flex: 30%;
+    flex: 35%;
     padding: 2rem;
   }
 }
@@ -1114,10 +1114,9 @@ div .images-show figure {
   }
 }
 div .images-show figure img {
-  min-width: 100%;
+  width: 100%;
   vertical-align: bottom;
   line-height: 120px;
-  object-fit: cover;
 }
 
 .shoots {

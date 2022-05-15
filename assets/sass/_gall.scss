@@ -162,7 +162,7 @@ div {
             max-width: 100%;
             padding-block: 2rem;
             @include medium-up {
-                flex: 30%;
+                flex: 35%;
                 padding: 2rem;
             }
             @include tablet-landscape-up {
@@ -174,10 +174,9 @@ div {
                 padding: 2rem;
             }
             img {
-                min-width: 100%;
+                width: 100%;
                 vertical-align: bottom;
                 line-height: 120px;
-                object-fit: cover;
             }
         }
     }
