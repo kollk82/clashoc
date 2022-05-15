@@ -8,6 +8,15 @@
                 <arrow />
             </div>
             <div class="gall--images">
+                <NuxtLink to="/meets/drift_games">
+                    <div class="gall--images-wrapper">
+                        <h3 class="h3">Drift games</h3>
+                        <img
+                            :src="'/gallery/img_tumb/18.jpg'"
+                            :alt="`${thumbnail} Drift games car meet 2022`"
+                        />
+                    </div>
+                </NuxtLink>
                 <NuxtLink to="/meets/athy_meet">
                     <div class="gall--images-wrapper">
                         <h3 class="h3">Athy Car Meet</h3>

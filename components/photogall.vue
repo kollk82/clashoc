@@ -2,6 +2,18 @@
     <div>
         <div
             class="images-show"
+            v-if="$route.params.id === 'drift_games' ? !show : show"
+        >
+            <figure v-for="(image, i) in 95" :key="i">
+                <img
+                    :src="`/gallery/meets/driftgames/${image}.jpg`"
+                    :alt="`Car meet image number ${image}`"
+                />
+            </figure>
+            <btn-back />
+        </div>
+        <div
+            class="images-show"
             v-if="$route.params.id === 'athy_meet' ? !show : show"
         >
             <figure v-for="(image, i) in 95" :key="i">
