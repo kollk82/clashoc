@@ -8,6 +8,13 @@
                 <arrow />
             </div>
             <div class="gall--images">
+                 <div class="gall--images-wrapper">
+                        <h3 class="h3">Johnstown Castle</h3>
+                        <img
+                            :src="'/gallery/img_tumb/19.jpg'"
+                            :alt="`${thumbnail} Johnstown Castle car meet 2022`"
+                        />
+                    </div>
                 <NuxtLink to="/meets/drift_games">
                     <div class="gall--images-wrapper">
                         <h3 class="h3">Drift games</h3>
