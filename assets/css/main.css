@@ -1093,7 +1093,7 @@ div .images-show figure {
   line-height: 0;
   flex: 100%;
   max-width: 100%;
-  padding-block: 2rem;
+  padding: 0.3rem;
 }
 @media (min-width: 1200px) {
   div .images-show figure {

@@ -8,6 +8,15 @@
                 <arrow />
             </div>
             <div class="gall--images">
+                <NuxtLink to="/meets/black_diamond_events">
+                    <div class="gall--images-wrapper">
+                        <h3 class="h3">Black Diamond Events</h3>
+                        <img
+                            :src="'/gallery/img_tumb/20.jpg'"
+                            :alt="`${thumbnail} Black Diamond Events car meet 2022`"
+                        />
+                    </div>
+                </NuxtLink>
                 <NuxtLink to="/meets/johnstown">
                     <div class="gall--images-wrapper">
                         <h3 class="h3">Johnstown Castle</h3>

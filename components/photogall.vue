@@ -2,6 +2,18 @@
     <div>
         <div
             class="images-show"
+            v-if="$route.params.id === 'black_diamond_events' ? !show : show"
+        >
+            <figure v-for="(image, i) in 169" :key="i">
+                <img
+                    :src="`/gallery/meets/black_diamond/${image}.jpg`"
+                    :alt="`Car meet image number ${image}`"
+                />
+            </figure>
+            <btn-back />
+        </div>
+        <div
+            class="images-show"
             v-if="$route.params.id === 'johnstown' ? !show : show"
         >
             <figure v-for="(image, i) in 138" :key="i">
