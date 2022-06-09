@@ -162,16 +162,16 @@ div {
             max-width: 100%;
             padding-block: 2rem;
             @include medium-up {
-                flex: 35%;
-                padding: 2rem;
+                flex: 21%;
+                padding: 0.3rem;
             }
             @include tablet-landscape-up {
                 flex: 35%;
-                padding: 2rem;
+                padding: 0.3rem;
             }
             @include tablet-portrait-up {
                 flex: 35%;
-                padding: 2rem;
+                padding: 0.3rem;
             }
             img {
                 width: 100%;
