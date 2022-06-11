@@ -8,6 +8,24 @@
                 <arrow />
             </div>
             <div class="gall--images">
+                <NuxtLink to="/meets/omni_car_meet">
+                    <div class="gall--images-wrapper">
+                        <h3 class="h3">Dublin Car Culture - Omni</h3>
+                        <img
+                            :src="'/gallery/img_tumb/22.jpg'"
+                            :alt="`${thumbnail} Omni car meet 2022`"
+                        />
+                    </div>
+                </NuxtLink>
+                <NuxtLink to="/meets/street_beast_2022">
+                    <div class="gall--images-wrapper">
+                        <h3 class="h3">Street Beasts Ireland 2022</h3>
+                        <img
+                            :src="'/gallery/img_tumb/21.jpg'"
+                            :alt="`${thumbnail} Street Beatst Ireland car meet 2022`"
+                        />
+                    </div>
+                </NuxtLink>
                 <NuxtLink to="/meets/black_diamond_events">
                     <div class="gall--images-wrapper">
                         <h3 class="h3">Black Diamond Events</h3>

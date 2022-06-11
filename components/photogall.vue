@@ -2,6 +2,30 @@
     <div>
         <div
             class="images-show"
+            v-if="$route.params.id === 'omni_car_meet' ? !show : show"
+        >
+            <figure v-for="(image, i) in 74" :key="i">
+                <img
+                    :src="`/gallery/meets/omni/${image}.jpg`"
+                    :alt="`Car meet image number ${image}`"
+                />
+            </figure>
+            <btn-back />
+        </div>
+        <div
+            class="images-show"
+            v-if="$route.params.id === 'street_beast_2022' ? !show : show"
+        >
+            <figure v-for="(image, i) in 84" :key="i">
+                <img
+                    :src="`/gallery/meets/sbo/2022/${image}.jpg`"
+                    :alt="`Car meet image number ${image}`"
+                />
+            </figure>
+            <btn-back />
+        </div>
+        <div
+            class="images-show"
             v-if="$route.params.id === 'black_diamond_events' ? !show : show"
         >
             <figure v-for="(image, i) in 169" :key="i">
