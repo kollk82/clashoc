@@ -4,7 +4,7 @@
             class="images-show"
             v-if="$route.params.id === 'db_quay' ? !show : show"
         >
-            <figure v-for="(image, i) in 155" :key="i">
+            <figure v-for="(image, i) in 218" :key="i">
                 <img
                     :src="`/gallery/meets/db_quay/${image}.jpg`"
                     :alt="`Car meet image number ${image}`"
