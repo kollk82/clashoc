@@ -2,6 +2,18 @@
     <div>
         <div
             class="images-show"
+            v-if="$route.params.id === 'northeast072022' ? !show : show"
+        >
+            <figure v-for="(image, i) in 118" :key="i">
+                <img
+                    :src="`/gallery/meets/northeast/2022/07/${image}.jpg`"
+                    :alt="`Car meet image number ${image}`"
+                />
+            </figure>
+            <btn-back />
+        </div>
+        <div
+            class="images-show"
             v-if="$route.params.id === 'db_quay' ? !show : show"
         >
             <figure v-for="(image, i) in 218" :key="i">
