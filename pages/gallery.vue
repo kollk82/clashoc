@@ -8,6 +8,15 @@
                 <arrow />
             </div>
             <div class="gall--images">
+                <NuxtLink to="/meets/osns">
+                    <div class="gall--images-wrapper">
+                        <h3>Osns Longford</h3>
+                        <img
+                            :src="'/gallery/img_tumb/27.jpg'"
+                            :alt="`${thumbnail} Car meet Osns`"
+                        />
+                    </div>
+                </NuxtLink>
                 <NuxtLink to="/meets/vage_shownshine">
                     <div class="gall--images-wrapper">
                         <h3>VAGE Show & Shine</h3>
