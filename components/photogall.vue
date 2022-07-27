@@ -4,7 +4,7 @@
             class="images-show"
             v-if="$route.params.id === 'osns' ? !show : show"
         >
-            <figure v-for="(image, i) in 97" :key="i">
+            <figure v-for="(image, i) in 125" :key="i">
                 <img
                     :src="`/gallery/meets/osns/${image}.jpg`"
                     :alt="`Car meet image number ${image}`"
