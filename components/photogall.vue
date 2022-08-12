@@ -1,5 +1,17 @@
 <template>
     <div>
+        <div
+            class="images-show"
+            v-if="$route.params.id === 'solow' ? !show : show"
+        >
+            <figure v-for="(image, i) in 212" :key="i">
+                <img
+                    :src="`/gallery/meets/solow/${image}.jpg`"
+                    :alt="`Car meet image number ${image}`"
+                />
+            </figure>
+            <btn-back />
+        </div>
          <div
             class="images-show"
             v-if="$route.params.id === 'osns' ? !show : show"
