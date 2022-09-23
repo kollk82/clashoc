@@ -8,6 +8,15 @@
                 <arrow />
             </div>
             <div class="gall--images">
+                <NuxtLink to="/meets/cleanfest">
+                    <div class="gall--images-wrapper">
+                        <h3>Cleanfest Edinburgh UK</h3>
+                        <img
+                            :src="'/gallery/img_tumb/29.jpg'"
+                            :alt="`${thumbnail} Car meet Cleanfest`"
+                        />
+                    </div>
+                </NuxtLink>
                 <NuxtLink to="/meets/solow">
                     <div class="gall--images-wrapper">
                         <h3>SoLow Autmotive Event</h3>
