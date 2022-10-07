@@ -8,6 +8,15 @@
                 <arrow />
             </div>
             <div class="gall--images">
+                 <NuxtLink to="/meets/segregated_society">
+                    <div class="gall--images-wrapper">
+                        <h3>Segregated Society 'Dropt'</h3>
+                        <img
+                            :src="'/gallery/img_tumb/30.jpg'"
+                            :alt="`${thumbnail} Car meet Segregated_S`"
+                        />
+                    </div>
+                </NuxtLink>
                 <NuxtLink to="/meets/cleanfest">
                     <div class="gall--images-wrapper">
                         <h3>Cleanfest Edinburgh UK</h3>
