@@ -8,6 +8,15 @@
                 <arrow />
             </div>
             <div class="gall--images">
+                <NuxtLink to="/meets/The_Classic_Car_Show_UK">
+                    <div class="gall--images-wrapper">
+                        <h3>The Classic Car Show UK</h3>
+                        <img
+                            :src="'/gallery/img_tumb/31.jpg'"
+                            :alt="`${thumbnail} The_Classic_Car_Show_UK`"
+                        />
+                    </div>
+                </NuxtLink>
                  <NuxtLink to="/meets/segregated_society">
                     <div class="gall--images-wrapper">
                         <h3>Segregated Society 'Dropt'</h3>

@@ -2,6 +2,18 @@
     <div>
         <div
             class="images-show"
+            v-if="$route.params.id === 'The_Classic_Car_Show_UK' ? !show : show"
+        >
+            <figure v-for="(image, i) in 228" :key="i">
+                <img
+                    :src="`/gallery/meets/The_Classic_Car_Show_UK/${image}.jpg`"
+                    :alt="`Car meet image number ${image}`"
+                />
+            </figure>
+            <btn-back />
+        </div>
+        <div
+            class="images-show"
             v-if="$route.params.id === 'segregated_society' ? !show : show"
         >
             <figure v-for="(image, i) in 168" :key="i">
