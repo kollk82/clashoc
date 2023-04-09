@@ -631,7 +631,12 @@ nav a:hover, nav a:focus {
   nav a {
     font-size: 80%;
     padding: 1.5rem 2rem 1rem 2rem;
+    margin: 2rem;
   }
+}
+nav .support {
+  margin: 0;
+  padding: auto 0;
 }
 nav .support img {
   width: 14rem;

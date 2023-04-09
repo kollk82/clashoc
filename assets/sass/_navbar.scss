@@ -204,7 +204,7 @@ nav {
         margin: 0;
         color: $main-color;
         font-size: 100%;
-        padding:2rem 0.5rem;
+        padding: 2rem 0.5rem;
         text-shadow: 0.2rem 0.1rem 0.2rem #000;
         text-transform: uppercase;
         transition: color 0.2s ease-in-out;
@@ -218,9 +218,12 @@ nav {
         @include medium-up {
             font-size: 80%;
             padding: 1.5rem 2rem 1rem 2rem;
+            margin: 2rem;
         }
     }
     .support {
+        margin: 0;
+        padding: auto 0;
         img {
             width: 14rem;
         }
