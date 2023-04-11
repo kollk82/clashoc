@@ -13,7 +13,7 @@
                     <NuxtLink to="/">Home</NuxtLink>
                     <!-- <NuxtLink to="/gear">My Gear</NuxtLink> -->
                     <NuxtLink to="/gallery">My work</NuxtLink>
-                    <NuxtLink to="/packages">Shop</NuxtLink>
+                    <!--<NuxtLink to="/packages">Shop</NuxtLink> -->
                     <NuxtLink to="/contact">Contact</NuxtLink>
                     <a
                         href="https://www.buymeacoffee.com/clashofcars182"

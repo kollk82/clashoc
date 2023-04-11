@@ -14,8 +14,12 @@
         flex-direction: column;
         height: calc(100vh - 7rem);
         z-index: 1;
-        background: url('~/assets/img/IMG_3866.jpg') no-repeat center;
+        background: url('~/assets/img/work_bg_top.jpg') no-repeat center;
         background-size: cover;
+        @include medium-up {
+            background: url('~/assets/img/work_bg_top_med.jpg') no-repeat center;
+            background-size: cover;
+        }
         &::before {
             content: '';
             position: absolute;
@@ -26,7 +30,7 @@
             width: 100%;
             height: calc(100vh - 7rem);
             background-image: radial-gradient(
-                hsl(0deg 0% 0% / 62%),
+                hsl(0deg 0% 0% / 42%),
                 hsl(0deg 0% 0%)
             );
             background-size: cover;
