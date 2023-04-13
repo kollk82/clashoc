@@ -1,0 +1,25 @@
+@use 'var' as *;
+@use 'media' as *;
+
+.side {
+    display: grid;
+    grid-column: 5;
+    grid-row: 2;
+    z-index: 1;
+    &-bar {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: flex-end;
+        &--vertical_box {
+            display: block;
+            width: 100%;
+            height: max-content;
+            a {
+                display: block;
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+}

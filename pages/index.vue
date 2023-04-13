@@ -2,6 +2,7 @@
     <div class="container">
         <navbar />
         <logo />
+        <side />
         <section class="bg"></section>
         <section class="home">
             <main class="home--text">

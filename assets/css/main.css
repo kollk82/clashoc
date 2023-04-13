@@ -1083,52 +1083,52 @@ p {
   z-index: 3;
 }
 
-div {
+.images {
   grid-column: 1/-1;
   grid-row: 2;
   margin: 0 auto;
 }
-div .images-show {
+.images .images-show {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-div .images-show h1 {
+.images .images-show h1 {
   display: block;
   width: 100vw;
   text-align: center;
   margin: 3rem 0;
 }
 @media (max-aspect-ratio: 1/1) and (max-width: 599px) {
-  div .images-show {
+  .images .images-show {
     flex-direction: row;
   }
 }
-div .images-show figure {
+.images .images-show figure {
   line-height: 0;
   flex: 100%;
   max-width: 100%;
   padding: 0.3rem;
 }
 @media (min-width: 1200px) {
-  div .images-show figure {
+  .images .images-show figure {
     flex: 21%;
     padding: 0.3rem;
   }
 }
 @media (min-width: 900px) and (max-width: 1199px) {
-  div .images-show figure {
+  .images .images-show figure {
     flex: 35%;
     padding: 0.3rem;
   }
 }
 @media (min-width: 600px) and (max-width: 899px) {
-  div .images-show figure {
+  .images .images-show figure {
     flex: 35%;
     padding: 0.3rem;
   }
 }
-div .images-show figure img {
+.images .images-show figure img {
   width: 100%;
   vertical-align: bottom;
   line-height: 120px;
@@ -1329,4 +1329,27 @@ div .images-show figure img {
 .footer p {
   display: block;
   font-size: 80%;
+}
+
+.side {
+  display: grid;
+  grid-column: 5;
+  grid-row: 2;
+  z-index: 1;
+}
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: flex-end;
+}
+.side-bar--vertical_box {
+  display: block;
+  width: 100%;
+  height: max-content;
+}
+.side-bar--vertical_box a {
+  display: block;
+  width: 4rem;
+  height: 4rem;
 }

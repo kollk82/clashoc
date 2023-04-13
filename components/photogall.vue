@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="images">
         <div
             class="images-show"
             v-if="$route.params.id === 'The_Classic_Car_Show_UK' ? !show : show"
