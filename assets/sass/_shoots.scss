@@ -80,6 +80,9 @@
                 padding: 10rem;
                 width: 100%;
                 height: auto;
+                @include navbar-wide-list{
+                    padding: 0;
+                }
 
                 p {
                     display: block;
@@ -99,5 +102,9 @@
         height: auto;
         font-size: 80%;
         text-align: center;
+        @include navbar-wide-list{
+            width: 80%;
+            margin-bottom: 4rem;
+        }
     }
 }

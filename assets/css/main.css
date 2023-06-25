@@ -1215,6 +1215,11 @@ p {
   width: 100%;
   height: auto;
 }
+@media (max-width: 600px) {
+  .shoots--content-box .bundle-desc {
+    padding: 0;
+  }
+}
 .shoots--content-box .bundle-desc p {
   display: block;
   height: auto;
@@ -1230,6 +1235,12 @@ p {
   height: auto;
   font-size: 80%;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .shoots .disclamer {
+    width: 80%;
+    margin-bottom: 4rem;
+  }
 }
 
 .social {
