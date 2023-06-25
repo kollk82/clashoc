@@ -23,6 +23,11 @@
         @content;
     }
 }
+@mixin wide {
+    @media (min-width: 1700px) {
+        @content;
+    }
+}
 @mixin medium-up {
     @media (min-width: 1200px) {
         @content;
