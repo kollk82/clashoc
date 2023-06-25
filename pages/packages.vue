@@ -33,7 +33,7 @@
                         </p>
 
                         <p>
-                            - A 30-second highlight video showcasing the
+                            - A 15-second highlight video showcasing the
                             vehicles in motion.
                         </p>
                         <p>
@@ -67,7 +67,7 @@
                             enhancement for a professional finish.
                         </p>
                         <p>
-                            - A 1-minute promotional video featuring the
+                            - A 30-minute promotional video featuring the
                             vehicles in different settings.
                         </p>
                         <p>
@@ -106,7 +106,7 @@
                             color grading, and enhancement for a premium look.
                         </p>
                         <p>
-                            - A 2-minute cinematic video highlighting the
+                            - A 1-minute cinematic video highlighting the
                             vehicles' beauty and performance.
                         </p>
                         <p>
