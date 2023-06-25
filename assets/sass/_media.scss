@@ -43,6 +43,11 @@
         @content;
     }
 }
+@mixin wide-p {
+    @media (max-width: 900px) {
+        @content;
+    }
+}
 @mixin gallery {
     @media (max-aspect-ratio: 1/1) and (max-width: 599px) {
         @content;

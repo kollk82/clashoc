@@ -1189,14 +1189,8 @@ p {
   background-position: center;
   background-size: cover;
 }
-@media (min-width: 1700px) {
-  .shoots--content {
-    flex-direction: row;
-  }
-}
 .shoots--content-box {
   width: 100%;
-  text-align: center;
   z-index: 2;
 }
 .shoots--content-box h2 {
@@ -1205,15 +1199,17 @@ p {
   color: yellow;
   border: none;
   border-color: transparent;
+  text-align: center;
 }
 .shoots--content-box h2 a {
   color: rgb(36, 153, 192);
   font-size: 70%;
 }
 .shoots--content-box .bundle-desc {
-  padding: 10rem;
+  padding: 0rem;
   width: 100%;
-  height: auto;
+  height: 100%;
+  margin: 2rem 0;
 }
 @media (max-width: 600px) {
   .shoots--content-box .bundle-desc {
@@ -1223,13 +1219,31 @@ p {
 .shoots--content-box .bundle-desc p {
   display: block;
   height: auto;
-  width: auto;
-  margin: 2rem 0;
+  width: 50%;
+  margin: 0 auto;
   line-height: 3.6rem;
+  font-size: 120%;
   text-align: left;
 }
+@media (max-width: 600px) {
+  .shoots--content-box .bundle-desc p {
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  .shoots--content-box .bundle-desc p {
+    width: 90%;
+  }
+}
+.shoots--content-box .bundle-desc small {
+  display: block;
+  font-style: italic;
+  font-size: 80%;
+  margin-top: 2rem;
+}
 .shoots .disclamer {
-  margin: 14rem 0 0 0;
+  display: block;
+  margin: 0 auto;
   z-index: 2;
   width: 40%;
   height: auto;

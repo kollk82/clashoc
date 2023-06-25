@@ -49,7 +49,7 @@
         display: flex;
         justify-content: center;
         //align-items: center;
-        flex-direction: column;
+        flex-direction:column;
         height: auto;
         width: 100%;
         padding: 0 5rem;
@@ -58,12 +58,10 @@
         background-position: center;
         background-size: cover;
         //outline: 1px solid rgb(0, 255, 81);
-        @include wide {
-            flex-direction: row;
-        }
+       
         &-box {
             width: 100%;
-            text-align: center;
+            //text-align: center;
             z-index: 2;
             h2 {
                 padding: 2rem 0;
@@ -71,15 +69,17 @@
                 color: yellow;
                 border: none;
                 border-color: transparent;
+                text-align: center;
                 a {
                     color: rgb(36, 153, 192);
                     font-size: 70%;
                 }
             }
             .bundle-desc {
-                padding: 10rem;
+                padding: 0rem;
                 width: 100%;
-                height: auto;
+                height: 100%;
+                margin: 2rem 0;
                 @include navbar-wide-list{
                     padding: 0;
                 }
@@ -87,16 +87,30 @@
                 p {
                     display: block;
                     height: auto;
-                    width: auto;
-                    margin: 2rem 0;
+                    width: 50%;
+                    margin: 0 auto;
                     line-height: 3.6rem;
+                    font-size: 120%;
                     text-align: left;
+                    @include navbar-wide-list{
+                        width: 90%;
+                    }
+                    @include wide-p{
+                        width: 90%;
+                    }
+                }
+                small{
+                    display: block;
+                    font-style: italic;
+                    font-size: 80%;        
+                    margin-top: 2rem;            
                 }
             }
         }
     }
     .disclamer {
-        margin: 14rem 0 0 0;
+        display: block;
+        margin: 0 auto;
         z-index: 2;
         width: 40%;
         height: auto;
