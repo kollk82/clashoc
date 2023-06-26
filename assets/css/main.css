@@ -1189,6 +1189,11 @@ p {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 900px) {
+  .shoots--content {
+    padding: 0 3rem;
+  }
+}
 .shoots--content-box {
   width: 100%;
   z-index: 2;

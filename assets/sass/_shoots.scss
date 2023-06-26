@@ -57,6 +57,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        @include wide-p{
+            padding: 0 3rem;
+        }
         //outline: 1px solid rgb(0, 255, 81);
        
         &-box {
