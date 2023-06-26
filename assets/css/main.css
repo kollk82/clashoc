@@ -1219,7 +1219,7 @@ p {
 .shoots--content-box .bundle-desc p {
   display: block;
   height: auto;
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   line-height: 3.6rem;
   font-size: 120%;
@@ -1232,7 +1232,7 @@ p {
 }
 @media (max-width: 900px) {
   .shoots--content-box .bundle-desc p {
-    width: 90%;
+    width: 100%;
   }
 }
 .shoots--content-box .bundle-desc small {
